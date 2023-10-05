@@ -15,7 +15,7 @@ const Agents = () => (
     <div className="flex flex-wrap">
       {namesArray.map((agent, index) => (
         <div className="w-full sm:w-1/2 lg:w-1/4 p-4" key={index}>
-          <div className="bg-white rounded-lg shadow-lg">
+          <div className="bg-white rounded-lg">
             <AgentCard name={agent.name} title={agent.title} />
           </div>
         </div>
