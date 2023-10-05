@@ -12,11 +12,17 @@ const booksArray = [
 ];
 
 const Books = () => {
+  const [bookNumber, setBookNumber] = useState(null);
+
+  const handleBookClick = (index) => {
+    setBookNumber(index);
+  };
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
 
   const showDrawer = () => {
     setOpen(true);
+    setBookNumber (index)
   };
 
   const onClose = () => {
@@ -34,11 +40,15 @@ const Books = () => {
     <div className="flex flex-wrap odd:m-r-[5px]">
       {booksArray.map((book, index) => (
         <>
-        <div className="w-full md:w-1/2 lg:w-1/4 bg-gradient-to-t from-black to-transparent" key={index}>
+        <div className="w-full md:w-1/2 lg:w-1/4 bg-gradient-to-t from-black to-transparent" key={index} onClick={() => handleBookClick(index)} >
           <div className="rounded-lg shadow-lg h-full">
         <BookCard title={book.title} author={book.author} imageUrl={book.imageUrl} onDrawer={showDrawer} />
           </div>
         </div>
+</>     
+      ))}
+     </div>
+  </div>
            <Drawer
            title="Basic Drawer"
            placement={placement}
@@ -47,14 +57,10 @@ const Books = () => {
            open={open}
            key={placement}
          >
-           <p>{book.author}</p>
+           <p>{book.author[bookNumber]}</p>
            <p>Some contents...</p>
            <p>Some contents...</p>
          </Drawer>
-</>     
-      ))}
-     </div>
-  </div>
 </>  );
 };
 
