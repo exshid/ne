@@ -11,7 +11,7 @@ import {
 import { blogConfig } from '@/config';
 import { Tooltip } from '@/components/tooltip';
 
-export function Footer() {
+ function FooterSection() {
   const { footerLinks } = blogConfig;
       <div className="flex flex-row flex-wrap justify-center gap-4 max-xs:px-16">
         {footerLinks?.facebook && (
@@ -103,3 +103,4 @@ export function Footer() {
     </footer>
   );
 }
+export default FooterSection;
