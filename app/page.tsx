@@ -53,6 +53,7 @@ export default function Home() {
         </div>
       </Content>
       <Footer
+      className='p-0 bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700'
         style={{
           textAlign: 'center',
         }}

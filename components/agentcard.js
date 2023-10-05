@@ -2,7 +2,7 @@ import React from 'react';
 import {Card, Button, Space } from 'antd';
 const AgentCard = ({ name, title }) => (
     <Card
-    className='font-ysabeau border-transparent hover:!border-transparent'
+    className='font-ysabeau border-transparent hover:!border-transparent !rounded-none'
     
     style={{
       width: '100%',
