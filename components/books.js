@@ -36,7 +36,7 @@ const Books = () => {
     <div className="flex flex-wrap odd:m-r-[5px]">
       {booksArray.map((book, index) => (
         <>
-        <div className="w-full md:w-1/2 lg:w-1/4 bg-gradient-to-t from-black to-transparent" key={index} onClick={() => setBookNumber(index)}  >
+        <div className="w-full md:w-1/2 lg:w-1/4 bg-gradient-to-t from-black to-transparent" key={index} onClick={() => setBookNumber(book.title)}  >
           <div className="rounded-lg shadow-lg h-full">
         <BookCard title={book.title} author={book.author} imageUrl={book.imageUrl} onDrawer={showDrawer} />
           </div>
@@ -53,7 +53,7 @@ const Books = () => {
            open={open}
            key={placement}
          >
-           <p>{booksArray[bookNumber]}</p>
+           <p>{bookNumber}</p>
            <p>Some contents...</p>
            <p>Some contents...</p>
          </Drawer>
