@@ -2,8 +2,8 @@ import React from 'react';
 import {Card, Button, Space } from 'antd';
 
 const { Meta } = Card;
-const AgentCard = () => (
-  <Card
+const AgentCard = ({ firstName, surname }) => (
+    <Card
     hoverable
     style={{
       width: 240,
