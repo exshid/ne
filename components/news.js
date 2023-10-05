@@ -9,7 +9,7 @@ const newsArray = [
   
 const InTheNews = () => {
   return (
-    <div className="flex flex-wrap font-ysabeau">
+    <div className="flex flex-wrap flex-column font-ysabeau">
       {newsArray.map((news, index) => (
         <div key={index} className="even:bg-[#121212] odd:bg-[#151515] w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
           <div className="hover:shadow p-6 h-full flex flex-col justify-evenly">

@@ -12,6 +12,9 @@
     "react": "^18",
     "antd":"latest",
     "react-dom": "^18",
+    "clsx":"latest",
+"tailwind-merge":"latest",
+"lucide-react":"latest",
     "next": "13.5.4"
   },
   "devDependencies": {
