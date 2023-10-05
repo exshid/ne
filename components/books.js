@@ -57,7 +57,7 @@ const Books = () => {
            open={open}
            key={placement}
          >
-           <p>{book.author[bookNumber]}</p>
+           <p>{booksArray[bookNumber]}</p>
            <p>Some contents...</p>
            <p>Some contents...</p>
          </Drawer>
