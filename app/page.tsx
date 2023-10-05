@@ -50,7 +50,7 @@ export default function Home() {
             background: colorBgContainer,
           }}
         >
-          Content
+          <Agents/>
         </div>
       </Content>
       <Footer
