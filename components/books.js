@@ -14,7 +14,7 @@ const booksArray = [
 const Agents = () => (
     <>
     <h2>Some of our books</h2>
-    <div className="flex flex-wrap max-h-[252px]">
+    <div className="flex flex-wrap">
       {booksArray.map((book, index) => (
         <div className="w-full md:w-1/2 lg:w-1/2" key={index}>
           <div className="bg-white rounded-lg shadow-lg h-full">

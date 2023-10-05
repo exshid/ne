@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutUsSection = () => {
   return (
-    <div className="h-screen flex flex-col sm:flex-row">
+    <div className="min-h-screen flex flex-col sm:flex-row">
       {/* Left Section (Lorem Ipsum Text) */}
       <div className="sm:w-1/2 bg-gray-200 p-8 flex items-center justify-center sm:justify-end">
         <p className="text-lg sm:text-xl text-gray-800">

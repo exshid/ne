@@ -2,27 +2,21 @@ import React from 'react';
 import AgentCard from './agentcard'
 import { Col, Row } from 'antd';
 const namesArray = [
-    { firstName: 'John', surname: 'Smith' },
-    { firstName: 'Emily', surname: 'Johnson' },
-    { firstName: 'Michael', surname: 'Williams' },
-    { firstName: 'Sophia', surname: 'Brown' },
-    { firstName: 'Daniel', surname: 'Miller' },
-    { firstName: 'Olivia', surname: 'Davis' },
-    { firstName: 'William', surname: 'Garcia' },
-    { firstName: 'Ava', surname: 'Martinez' },
-    { firstName: 'James', surname: 'Jones' },
-    { firstName: 'Emma', surname: 'Taylor' },
-    { firstName: 'Benjamin', surname: 'Clark' }
-  ];
+    { name: 'John', title: 'Founder' },
+    { name: 'Emily', title: 'Agent' },
+    { name: 'Michael', title: 'Editor' },
+    { name: 'Sophia', title: 'Agent' },
+    { name: 'Daniel', title: 'Editor' },
+    { name: 'Olivia', title: 'Partner' }  ];
   
 const Agents = () => (
     <>
     <h2>Meet our Agents</h2>
     <div className="flex flex-wrap">
       {namesArray.map((agent, index) => (
-        <div className="w-full md:w-1/2 lg:w-1/4 p-4" key={index}>
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <AgentCard firstName={agent.firstName} surname={agent.surname} />
+        <div className="w-full sm:w-1/2 lg:w-1/4 p-4" key={index}>
+          <div className="bg-white rounded-lg shadow-lg">
+            <AgentCard name={agent.name} title={agent.title} />
           </div>
         </div>
       ))}
