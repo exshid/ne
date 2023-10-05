@@ -2,7 +2,7 @@ import React from 'react';
 import {Card, Button, Space } from 'antd';
 
 const { Meta } = Card;
-const AgentCard = () => (
+const BookCard = () => (
   <Card
     hoverable
     style={{
@@ -10,9 +10,9 @@ const AgentCard = () => (
     }}
     cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
   >
-    <Meta title={firstName} description={surname} />
+    <Meta title="Europe Street beat" description="www.instagram.com" />
     <Button>Read More</Button>
 
   </Card>
 );
-export default AgentCard;
+export default BookCard;

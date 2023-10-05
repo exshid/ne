@@ -1,34 +1,33 @@
-'use '
 import React from 'react';
 import AgentCard from './agentcard'
 import { Col, Row } from 'antd';
-
+const namesArray = [
+    { firstName: 'John', surname: 'Smith' },
+    { firstName: 'Emily', surname: 'Johnson' },
+    { firstName: 'Michael', surname: 'Williams' },
+    { firstName: 'Sophia', surname: 'Brown' },
+    { firstName: 'Daniel', surname: 'Miller' },
+    { firstName: 'Olivia', surname: 'Davis' },
+    { firstName: 'William', surname: 'Garcia' },
+    { firstName: 'Ava', surname: 'Martinez' },
+    { firstName: 'James', surname: 'Jones' },
+    { firstName: 'Emma', surname: 'Taylor' },
+    { firstName: 'Benjamin', surname: 'Clark' }
+  ];
+  
 const Agents = () => (
     <>
-<div class="flex flex-wrap">
-    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-4">
-        <div class="bg-white rounded-lg shadow-lg p-6">
-            <AgentCard/>
+    <h2>Meet our Agents</h2>
+    <div className="flex flex-wrap">
+      {namesArray.map((agent, index) => (
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-4" key={index}>
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <AgentCard firstName={agent.firstName} surname={agent.surname} />
+          </div>
         </div>
+      ))}
     </div>
-    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-4">
-        <div class="bg-white rounded-lg shadow-lg p-6">
-        <AgentCard/>
-        </div>
-    </div>
+  </>
 
-    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-4">
-        <div class="bg-white rounded-lg shadow-lg p-6">
-        <AgentCard/>
-        </div>
-    </div>
-    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-4">
-        <div class="bg-white rounded-lg shadow-lg p-6">
-        <AgentCard/>
-        </div>
-    </div>
-
-</div>
-</>
 );
 export default Agents;
