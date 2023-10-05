@@ -1,6 +1,9 @@
 'use client';
 import React from 'react';
 import Agents from '../components/agents';
+import Books from '../components/books';
+import HeroSection from '../components/herosection';
+import AboutUsSection from '../components/aboutus'
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
 
@@ -50,7 +53,11 @@ export default function Home() {
             background: colorBgContainer,
           }}
         >
+          <HeroSection/>
+          
+          <AboutUsSection/>
           <Agents/>
+<Books/>
         </div>
       </Content>
       <Footer
