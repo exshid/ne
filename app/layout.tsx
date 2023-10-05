@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} transition font-ysabeau`}>{children}</body>
+      <body className='transition font-ysabeau'>{children}</body>
     </html>
   )
 }
