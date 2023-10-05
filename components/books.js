@@ -13,7 +13,7 @@ const booksArray = [
 
 const Books = () => {
   const [open, setOpen] = useState(false);
-  const [placement, setPlacement] = useState('left');
+  const [placement, setPlacement] = useState('right');
 
   const showDrawer = () => {
     setOpen(true);
@@ -41,7 +41,7 @@ const Books = () => {
         </div>
            <Drawer
            title="Basic Drawer"
-           placement={right}
+           placement={placement}
            closable={false}
            onClose={onClose}
            open={open}
