@@ -13,10 +13,6 @@ const booksArray = [
 
 const Books = () => {
   const [bookNumber, setBookNumber] = useState(null);
-
-  const handleBookClick = (index) => {
-    setBookNumber(index);
-  };
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
 
@@ -40,7 +36,7 @@ const Books = () => {
     <div className="flex flex-wrap odd:m-r-[5px]">
       {booksArray.map((book, index) => (
         <>
-        <div className="w-full md:w-1/2 lg:w-1/4 bg-gradient-to-t from-black to-transparent" key={index} onClick={() => handleBookClick(index)} >
+        <div className="w-full md:w-1/2 lg:w-1/4 bg-gradient-to-t from-black to-transparent" key={index} onClick={() => setBookNumber(index)}  >
           <div className="rounded-lg shadow-lg h-full">
         <BookCard title={book.title} author={book.author} imageUrl={book.imageUrl} onDrawer={showDrawer} />
           </div>
