@@ -1,18 +1,13 @@
 import React from 'react';
 import BookCard from './bookcard'
 import { Col, Row } from 'antd';
+
 const booksArray = [
-    { bookTitle: 'To Kill a Mockingbird', authorName: 'Harper Lee' },
-    { bookTitle: '1984', authorName: 'George Orwell' },
-    { bookTitle: 'The Great Gatsby', authorName: 'F. Scott Fitzgerald' },
-    { bookTitle: 'Moby-Dick', authorName: 'Herman Melville' },
-    { bookTitle: 'Pride and Prejudice', authorName: 'Jane Austen' },
-    { bookTitle: 'The Catcher in the Rye', authorName: 'J.D. Salinger' },
-    { bookTitle: 'Brave New World', authorName: 'Aldous Huxley' },
-    { bookTitle: 'Lord of the Rings', authorName: 'J.R.R. Tolkien' },
-    { bookTitle: 'War and Peace', authorName: 'Leo Tolstoy' },
-    { bookTitle: 'The Hobbit', authorName: 'J.R.R. Tolkien' },
-    { bookTitle: 'Alice in Wonderland', authorName: 'Lewis Carroll' }
+  { title: 'Book 1', author: 'Author 1', imageUrl: 'https://ca-times.brightspotcdn.com/dims4/default/f9acfb8/2147483647/strip/true/crop/1200x1813+0+0/resize/1200x1813!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faf%2F5a%2F2f3a70a244b08aff8571dda5a3e8%2Fbooks-hunger-games-54386.jpg' },
+  { title: 'Book 2', author: 'Author 2', imageUrl: 'https://ca-times.brightspotcdn.com/dims4/default/f9acfb8/2147483647/strip/true/crop/1200x1813+0+0/resize/1200x1813!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faf%2F5a%2F2f3a70a244b08aff8571dda5a3e8%2Fbooks-hunger-games-54386.jpg' },
+  { title: 'Book 3', author: 'Author 3', imageUrl: 'https://ca-times.brightspotcdn.com/dims4/default/f9acfb8/2147483647/strip/true/crop/1200x1813+0+0/resize/1200x1813!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faf%2F5a%2F2f3a70a244b08aff8571dda5a3e8%2Fbooks-hunger-games-54386.jpg' },
+  { title: 'Book 4', author: 'Author 4', imageUrl: 'https://ca-times.brightspotcdn.com/dims4/default/f9acfb8/2147483647/strip/true/crop/1200x1813+0+0/resize/1200x1813!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faf%2F5a%2F2f3a70a244b08aff8571dda5a3e8%2Fbooks-hunger-games-54386.jpg' },
+  { title: 'Book 5', author: 'Author 5', imageUrl: 'https://ca-times.brightspotcdn.com/dims4/default/f9acfb8/2147483647/strip/true/crop/1200x1813+0+0/resize/1200x1813!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faf%2F5a%2F2f3a70a244b08aff8571dda5a3e8%2Fbooks-hunger-games-54386.jpg' }
 ];
 
   
@@ -23,7 +18,7 @@ const Agents = () => (
       {booksArray.map((book, index) => (
         <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-4" key={index}>
           <div className="bg-white rounded-lg shadow-lg p-6">
-            <BookCard bookTitle={book.bookTitle} authorName={book.authorName} />
+        <BookCard title={book.title} author={book.author} imageUrl={book.imageUrl} />
           </div>
         </div>
       ))}
