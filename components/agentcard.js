@@ -2,7 +2,8 @@ import React from 'react';
 import {Card, Button, Space } from 'antd';
 const AgentCard = ({ name, title }) => (
     <Card
-    hoverable
+    className='font-ysabeau'
+    
     style={{
       width: '100%',
     }}
