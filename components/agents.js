@@ -1,6 +1,6 @@
 'use '
 import React from 'react';
-import AgentCard from './agentcard.js'
+import AgentCard from './agentcard'
 import { Col, Row } from 'antd';
 
 const Agents = () => (

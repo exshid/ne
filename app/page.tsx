@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Agents from '../components/agents';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
 
