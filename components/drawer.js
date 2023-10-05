@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import { Button, Drawer, Radio, Space } from 'antd';
-const Drawer = () => {
+const DrawerComponent = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('left');
   const showDrawer = () => {
@@ -41,4 +41,4 @@ const Drawer = () => {
     </>
   );
 };
-export default Drawer;
+export default DrawerComponent;
