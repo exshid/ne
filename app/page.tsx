@@ -6,7 +6,7 @@ import HeroSection from '../components/herosection';
 import AboutUsSection from '../components/aboutus';
 import FooterSection from '../components/footer';
 import InTheNews from '../components/news';
-
+import MyHeader from '../components/header';
 
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
@@ -23,19 +23,7 @@ export default function Home() {
           alignItems: 'center',
         }}
       >
-        <div className="demo-logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-          items={new Array(15).fill(null).map((_, index) => {
-            const key = index + 1;
-            return {
-              key,
-              label: `nav ${key}`,
-            };
-          })}
-        />
+      <MyHeader/>
       </Header>
       <Content
         style={{

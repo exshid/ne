@@ -2,9 +2,10 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-gray-800 text-white bg-fixed"
+    <div className="h-screen flex flex-col justify-center items-center bg-gray-800 text-white"
 style={{  background: `url('https://unsplash.com/photos/p_kICQCOM4s/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTV8fG9mZmljZXxlbnwwfHx8fDE2OTY1MjIzMzZ8MA&force=true&w=1920')`,
-backgroundSize: 'cover'}}
+backgroundSize: 'cover',
+backgroundAttachment: 'fixed'}}
 >
       <h1 className="text-4xl sm:text-6xl mb-4">WELCOME TO</h1>
       <h2 className="text-6xl sm:text-8xl mb-6">OUR AGENCY</h2>
