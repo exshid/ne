@@ -12,7 +12,7 @@ const namesArray = [
 const Agents = () => (
     <>
     <h2>Meet our Agents</h2>
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap px-5">
       {namesArray.map((agent, index) => (
         <div className="w-full sm:w-1/2 lg:w-1/4 p-4" key={index}>
           <div className="bg-white rounded-lg">

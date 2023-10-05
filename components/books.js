@@ -33,7 +33,7 @@ const Books = () => {
 <>
 <div className="bg-black text-white font-ysabeau">
     <h2>Some of our books</h2>
-    <div className="flex flex-wrap odd:m-r-[5px]">
+    <div className="flex flex-wrap odd:mr-[5px]">
       {booksArray.map((book, index) => (
         <>
         <div className="w-full md:w-1/2 lg:w-1/4 bg-gradient-to-t from-black to-transparent" key={index} onClick={() => setBookNumber(book.title)}  >
