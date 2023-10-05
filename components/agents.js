@@ -20,7 +20,7 @@ const Agents = () => (
     <h2>Meet our Agents</h2>
     <div className="flex flex-wrap">
       {namesArray.map((agent, index) => (
-        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-4" key={index}>
+        <div className="w-full md:w-1/2 lg:w-1/4 p-4" key={index}>
           <div className="bg-white rounded-lg shadow-lg p-6">
             <AgentCard firstName={agent.firstName} surname={agent.surname} />
           </div>

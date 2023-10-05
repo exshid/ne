@@ -14,10 +14,10 @@ const booksArray = [
 const Agents = () => (
     <>
     <h2>Some of our books</h2>
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap max-h-[252px]">
       {booksArray.map((book, index) => (
-        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-4" key={index}>
-          <div className="bg-white rounded-lg shadow-lg p-6">
+        <div className="w-full md:w-1/2 lg:w-1/2" key={index}>
+          <div className="bg-white rounded-lg shadow-lg h-full">
         <BookCard title={book.title} author={book.author} imageUrl={book.imageUrl} />
           </div>
         </div>
