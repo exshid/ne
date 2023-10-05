@@ -9,7 +9,6 @@ import {
 } from 'lucide-react';
 
 import { blogConfig } from '@/config';
-import { Tooltip } from '@/components/tooltip';
 
  function FooterSection() {
   const { footerLinks } = blogConfig;
@@ -26,7 +25,6 @@ import { Tooltip } from '@/components/tooltip';
               data-tooltip-content="My facebook profile"
               aria-label="My facebook profile"
             />
-            <Tooltip anchorId="facebook" />
           </a>
         )}
         {footerLinks?.twitter && (
@@ -41,7 +39,6 @@ import { Tooltip } from '@/components/tooltip';
               data-tooltip-content="My Twitter profile"
               aria-label="My Twitter profile"
             />
-            <Tooltip anchorId="twitter" />
           </a>
         )}
         
@@ -53,7 +50,6 @@ import { Tooltip } from '@/components/tooltip';
               data-tooltip-content="My Email"
               aria-label="My Email"
             />
-            <Tooltip anchorId="email" />
           </a>
         )}
         
@@ -88,7 +84,6 @@ import { Tooltip } from '@/components/tooltip';
           <line x1="12" y1="38" x2="12" y2="5"></line>
           <polyline points="5 12 12 5 19 12"></polyline>
         </svg>
-        <Tooltip anchorId="scroll-to-top" place="right" />
       </button>
       <div className="flex h-6 flex-row items-center justify-center space-x-1 text-slate-600 dark:text-slate-300">
         <Copyright className="h-4 w-4" aria-label="Copyright" />
