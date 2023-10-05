@@ -3,7 +3,9 @@ import React from 'react';
 import Agents from '../components/agents';
 import Books from '../components/books';
 import HeroSection from '../components/herosection';
-import AboutUsSection from '../components/aboutus'
+import AboutUsSection from '../components/aboutus';
+import FooterSection from '../components/footer';
+
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
 
@@ -65,8 +67,7 @@ export default function Home() {
           textAlign: 'center',
         }}
       >
-        Ant Design ©2023 Created by Ant UED
-      </Footer>
+<FooterSection/>      </Footer>
     </Layout>
   );
 };

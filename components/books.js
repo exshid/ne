@@ -1,5 +1,5 @@
 import React from 'react';
-import AgentCard from './agentcard'
+import BookCard from './bookcard'
 import { Col, Row } from 'antd';
 const booksArray = [
     { bookTitle: 'To Kill a Mockingbird', authorName: 'Harper Lee' },
@@ -18,12 +18,12 @@ const booksArray = [
   
 const Agents = () => (
     <>
-    <h2>Meet our Agents</h2>
+    <h2>Some of our books</h2>
     <div className="flex flex-wrap">
       {booksArray.map((book, index) => (
         <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 p-4" key={index}>
           <div className="bg-white rounded-lg shadow-lg p-6">
-            <AgentCard bookTitle={book.bookTitle} authorName={book.authorName} />
+            <BookCard bookTitle={book.bookTitle} authorName={book.authorName} />
           </div>
         </div>
       ))}
