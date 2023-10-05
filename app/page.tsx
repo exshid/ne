@@ -6,6 +6,7 @@ import HeroSection from '../components/herosection';
 import AboutUsSection from '../components/aboutus';
 import FooterSection from '../components/footer';
 import InTheNews from '../components/news';
+import {Contact} from '../components/contact';
 
 
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
@@ -49,11 +50,15 @@ export default function Home() {
           <AboutUsSection/>
           <Agents/>
 <Books/>
+<section className="min-h-screen flex flex-col lg:flex-row items-stretch text-white ">
+
 <InTheNews/>
+<Contact/>
+</section>
         </div>
       </Content>
       <Footer
-      className='p-0 bg-gradient-to-r from-teal-500 via-teal-600 to-teal-700'
+      className='p-0'
         style={{
           textAlign: 'center',
         }}

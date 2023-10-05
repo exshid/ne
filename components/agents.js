@@ -10,9 +10,9 @@ const namesArray = [
     { name: 'Olivia', title: 'Partner' }  ];
   
 const Agents = () => (
-    <div className="flex justify-center">
+    <div className="flex justify-center flex-col">
     <h2 className="text-slate-600">Meet our Agents</h2>
-    <div className="flex flex-wrap px-16 w-full lg:3/4">
+    <div className="flex flex-wrap px-16 w-full lg:w-3/4">
       {namesArray.map((agent, index) => (
         <div className="w-full sm:w-1/2 lg:w-1/3 p-4" key={index}>
           <div className="bg-white">

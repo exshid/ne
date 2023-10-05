@@ -56,7 +56,7 @@ import { blogConfig } from '@/config';
       </div>
 
   return (
-    <footer className="border-t border-t-slate-300 min-h-[55px] flex h-full w-full flex-row justify-between items-center px-5 py-3">
+    <div className="border-t border-t-slate-300 min-h-[55px] flex h-full w-full flex-row justify-between items-center px-5 py-3">
 
       <button
         className="left-8 bottom-4 h-full w-fit"
@@ -85,7 +85,7 @@ import { blogConfig } from '@/config';
           <polyline points="5 12 12 5 19 12"></polyline>
         </svg>
       </button>
-      <div className="flex h-6 flex-row items-center justify-center space-x-1 text-slate-600 dark:text-slate-300">
+      <div className="flex h-6 flex-row items-center justify-center space-x-1 text-slate-600">
         <Copyright className="h-4 w-4" aria-label="Copyright" />
         <span className="text-xs xs:text-sm">{new Date().getFullYear()} · {blogConfig.author}</span>
       </div>
@@ -95,7 +95,7 @@ import { blogConfig } from '@/config';
   <span className="text-xs xs:text-sm">Policies</span>
      </Link>
 </div>
-    </footer>
+    </div>
   );
 }
 export default FooterSection;
