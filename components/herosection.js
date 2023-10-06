@@ -9,12 +9,12 @@ const HeroSection = () => {
       <div className="flex space-x-4 mb-8">
       <div className="transition hover:-translate-y-[4px] pb-2 pt-4">
                       <Link href="about">  <button 
-     className="uppercase block transition w-full p-4 px-8 text-lg text-white rounded bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none">Read More</button>
+     className="uppercase block transition w-full p-3 px-10 text-lg text-white rounded bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none">Read More</button>
      </Link>
                     </div>
         <div className="transition hover:-translate-y-[4px] pb-2 pt-4">
                       <Link href="about">  <button 
-     className="uppercase block transition w-full p-4 px-8 text-lg text-white rounded bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none">Read More</button>
+     className="uppercase block transition w-full p-3 px-10 text-lg text-white rounded bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none">Read More</button>
      </Link>
                     </div>
       </div>

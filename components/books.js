@@ -31,12 +31,13 @@ const Books = () => {
 
   return (
 <>
-<div className="bg-black text-white font-ysabeau">
-    <h2>Some of our books</h2>
+<div className="text-white font-ysabeau">
+<h3 className="font-black pt-5 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
+    Meet our Agents</h3>
     <div className="flex flex-wrap odd:mr-[5px]">
       {booksArray.map((book, index) => (
         <>
-        <div className="w-full md:w-1/2 lg:w-1/4" key={index} onClick={() => setBookNumber(book.title)}  >
+        <div className="w-full md:w-1/2 bg-black lg:w-1/4" key={index} onClick={() => setBookNumber(book.title)}  >
           <div className="rounded-lg shadow-lg h-full">
         <BookCard title={book.title} author={book.author} imageUrl={book.imageUrl} onDrawer={showDrawer} />
           </div>
