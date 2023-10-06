@@ -29,10 +29,7 @@ export default function RootLayout({
             <Content>
               <div
                 className="site-layout-content"
-                style={{
-                  background: colorBgContainer,
-                }}
-              >
+               >
         {children}
       
       
