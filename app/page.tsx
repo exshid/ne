@@ -50,11 +50,9 @@ export default function Home() {
           <AboutUsSection/>
           <Agents/>
 <Books/>
-<section className="min-h-screen flex flex-col lg:flex-row items-stretch text-white ">
 
 <InTheNews/>
 <Contact/>
-</section>
         </div>
       </Content>
       <Footer

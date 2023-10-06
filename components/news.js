@@ -9,9 +9,9 @@ const newsArray = [
   
 const InTheNews = () => {
   return (
-    <div className="flex flex-wrap flex-col w-1/2 font-ysabeau">
+    <div className="flex flex-wrap w-full font-ysabeau">
       {newsArray.map((news, index) => (
-        <div key={index} className="even:bg-[#121212] odd:bg-[#151515] w-full">
+        <div key={index} className="bg-[#121212] w-full">
           <div className="hover:shadow p-6 h-full flex flex-col justify-evenly">
             <p className="text-base text-gray-600 mb-2">{news.outlet}</p>
             <h2 className="text-xl sm:text-4xl font-bold mb-4 text-white">{news.title}</h2>

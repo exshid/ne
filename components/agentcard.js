@@ -1,19 +1,19 @@
 import React from 'react';
 import {Card, Button, Space } from 'antd';
 const AgentCard = ({ name, title }) => (
-    <Card
-    className='font-ysabeau border-transparent hover:!border-transparent !rounded-none'
-    
-    style={{
-      width: '100%',
-    }}
-    cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-  >
+  <>
+<div className="relative w-full sm:w-1/2 lg:w-1/3 p-6 h-96">
+      <img
+        className="absolute inset-0 object-cover w-full h-full"
+        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+        alt="photo of the agent"
+      />
+      <div className="absolute inset-x-0 bottom-0 px-4 pb-6 pt-32 bg-gradient-to-t from-black to-transparent">
+        <h3 className="text-lg font-semibold text-white">{name}</h3>
+        <p className="text-slate-600">{title}</p>
+      </div>
+    </div>
+</>
 
-    <p className="font-bold text-2xl">{name}</p>
-    <p className="text-slate-600">{title}</p>
-    <Button className='border-transparent hover:!border-transparent hover:!text-pink-700 text-lg m-t-[l5px] p-[0px]'>Read More</Button>
-
-  </Card>
 );
 export default AgentCard;

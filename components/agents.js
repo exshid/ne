@@ -24,18 +24,7 @@ const Agents = () => (
       ))}
     </div>
   </div>
-    <div className="relative h-64">
-      <img
-        className="absolute inset-0 object-cover w-full h-full"
-        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-        alt=""
-      />
-      <div className="absolute inset-x-0 bottom-0 px-4 py-6 bg-white bg-opacity-75">
-        <h3 className="text-lg font-semibold text-gray-900">John Doe</h3>
-        <p className="text-sm font-medium text-gray-500">Software Engineer</p>
-      </div>
-    </div>
-</>
+   </>
 
 );
 export default Agents;

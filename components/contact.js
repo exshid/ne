@@ -7,6 +7,17 @@ import React, {useState, useEffect, FormEvent } from 'react';
 export const  Contact = () => {
 
     return (
+
+        <section id="contact" className="min-h-screen flex flex-col lg:flex-row items-stretch text-white ">
+        <div className="lg:flex w-full p-8 lg:w-1/2 bg-gradient-to-r from-rose-600 to-rose-900 relative items-center">
+        <div className="w-full px-2 xl:px-24 z-10">
+            <h1 className="text-5xl font-bold text-left tracking-wide">Get In Touch</h1>
+
+            <p className="text-xl lg:text-3xl my-4">Email me at<br/>{footerLinks?.email && footerLinks.email}</p>
+        </div>
+
+    </div>
+
 <div className="lg:w-1/2 w-full flex items-center justify-center text-center xl:px-16 px-0 z-0 bg-white text-[#151515]">
 <div className="w-full py-6 z-20">
 <p  className="text-3xl my-4 text-[#151515]">
@@ -37,6 +48,7 @@ export const  Contact = () => {
     </form>
 </div>
 </div>
+</section>
 
 );
   }
