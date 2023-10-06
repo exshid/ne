@@ -12,7 +12,7 @@ const namesArray = [
 const Agents = () => (
   <>
 
-<div className="flex justify-center flex-col items-center">
+<div className="flex justify-center flex-col items-center font-ysabeau">
     <h2 className="text-slate-600">Meet our Agents</h2>
     <div className="flex flex-wrap lg:px-24 w-full lg:w-3/4">
       {namesArray.map((agent, index) => (
