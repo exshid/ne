@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { compareDesc } from 'date-fns';
 import { blogConfig } from '@/config';
 
 //const { title, description } = blogConfig.pages.home;
