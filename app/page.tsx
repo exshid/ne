@@ -17,17 +17,7 @@ export default function Home() {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
-  return (
-    <Layout className="layout h-full">
-      
-<Navbar/>
-      <Content>
-        <div
-          className="site-layout-content"
-          style={{
-            background: colorBgContainer,
-          }}
-        >
+  return (<>
           <HeroSection/>
           
           <AboutUsSection/>
@@ -35,16 +25,6 @@ export default function Home() {
 <Books/>
 
 <InTheNews/>
-<Contact/>
-        </div>
-      </Content>
-      <Footer
-      className='p-0'
-        style={{
-          textAlign: 'center',
-        }}
-      >
-<FooterSection/>      </Footer>
-    </Layout>
+</>
   );
 };

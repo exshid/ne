@@ -6,6 +6,11 @@ const nextConfig = {
             protocol: 'https',
             hostname: '**.alipayobjects.com',
         },
+        {
+          protocol: 'https',
+          hostname: '**.unsplash.com',
+      },
+
         ],
       },
     

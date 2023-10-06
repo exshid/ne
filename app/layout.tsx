@@ -1,6 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Navbar from '../components/navbar';
+import FooterSection from '../components/footer';
+import {Contact} from '../components/contact';
+import { Breadcrumb, Layout, Menu, theme } from 'antd';
+const { Header, Content, Footer } = Layout;
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +21,34 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='transition font-ysabeau'>{children}</body>
+      <body className='transition font-ysabeau'>
+        
+    <Layout className="layout h-full">
+      
+      <Navbar/>
+            <Content>
+              <div
+                className="site-layout-content"
+                style={{
+                  background: colorBgContainer,
+                }}
+              >
+        {children}
+      
+      
+      
+<Contact/>
+        </div>
+      </Content>
+      <Footer
+      className='p-0'
+        style={{
+          textAlign: 'center',
+        }}
+      >
+<FooterSection/>      </Footer>
+    </Layout>
+      </body>
     </html>
   )
 }

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { blogConfig } from '@/config';
+import Agents from '../components/agents';
 
 //const { title, description } = blogConfig.pages.home;
 //const pageTitle = "About Me — "
@@ -47,8 +48,11 @@ export default function About() {
 <div className="px-2 md:px-5 lg:px-10 xl:px-80 w-full text-darkish items-center jakarta-font dark:text-white">
     <p className="py-2 whitespace-pre-wrap">{blogConfig.about}</p>
 </div>
+<Agents/>
+
     </div>
 
-  
+
+
   );
 }
