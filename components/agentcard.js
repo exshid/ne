@@ -2,7 +2,7 @@ import React from 'react';
 import {Card, Button, Space } from 'antd';
 const AgentCard = ({ name, title, image, onDrawer }) => (
   <>
-<div onClick={onDrawer} className="relative w-full p-6 h-96 group">
+<div onClick={onDrawer} className="relative cursor-pointer w-full p-6 h-96 group">
       <img
         className="absolute inset-0 object-cover w-full h-full"
         src={image}

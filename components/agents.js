@@ -62,7 +62,7 @@ const namesArray = [
            onClose={onClose}
            open={open}
            key={placement}
-           className="text-black"
+           className="text-black w-full lg:w-3/4"
          >
            <p>{agentBio}</p>
            <p>Some contents...</p>
