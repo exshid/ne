@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import {ScrollWrapper} from '@/components/wrapper';
+
 import React, { useState } from 'react';
 import { Button, Drawer, Radio, Space } from 'antd';
 import { Col, Row } from 'antd';
@@ -36,7 +38,7 @@ const namesArray = [
   };
   return (
 
-<>
+    <ScrollWrapper>
 
 <div id="our-team" className="flex justify-center flex-col items-center font-ysabeau pb-5">
     <h3 className="font-black p-5 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
@@ -90,7 +92,7 @@ const namesArray = [
 
          </Drawer>
 
-   </>
+   </ScrollWrapper>
 );
 };
 

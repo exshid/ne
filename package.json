@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "react": "^18",
+    "framer-motion":"latest",
+
     "antd":"latest",
     "react-dom": "^18",
     "clsx":"latest",
