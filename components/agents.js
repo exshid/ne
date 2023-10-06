@@ -58,7 +58,7 @@ const namesArray = [
   <Drawer
            title={agentName}
            placement={placement}
-           closable={false}
+           closable={true}
            onClose={onClose}
            open={open}
            key={placement}

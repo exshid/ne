@@ -36,16 +36,19 @@ const Navbar = () => {
             </div>
             
   <Drawer
-           title='My Website'
            placement={placement}
-           closable={false}
+           closable={true}
            onClose={onClose}
            open={open}
            key={placement}
            className="text-black w-3/4"
          >
-           <p>Some contents...</p>
-           <p>Some contents...</p>
+            <div className="flex flex-col text-xl">
+                    <a onClick={onClose} href="#">Home</a>
+                    <a onClick={onClose} href="#">About</a>
+                    <a onClick={onClose} href="#">Services</a>
+                    <a onClick={onClose} href="#contact">Submissions</a>
+                    </div>
          </Drawer>
 
         </nav>

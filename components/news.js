@@ -13,7 +13,7 @@ const InTheNews = () => {
     <div className="h-[5px] bg-gradient-to-r from-rose-600 to-rose-900"></div>
       <h3 className="bg-[#121212] p-6 text-2xl md:text-3xl lg:text-5xl font-black uppercase">
     In the news</h3>
-    <div className="flex flex-wrap flex-col w-full bg-[#121212] font-ysabeau">
+    <div className="flex flex-wrap w-full bg-[#121212] font-ysabeau">
 
       {newsArray.map((news, index) => (
         <div key={index} className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
