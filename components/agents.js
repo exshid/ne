@@ -48,7 +48,7 @@ const namesArray = [
         }}
          >
           <div className="bg-white">
-            <AgentCard name={agent.name} title={agent.title} onDrawer={showDrawer} />
+            <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={showDrawer} />
           </div>
         </div>
       ))}
