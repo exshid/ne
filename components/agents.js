@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React, { useState } from 'react';
 import { Button, Drawer, Radio, Space } from 'antd';
 import { Col, Row } from 'antd';
@@ -63,10 +64,18 @@ const namesArray = [
            onClose={onClose}
            open={open}
            key={placement}
-           className="text-black w-full lg:w-3/4"
+           className="text-black w-full lg:w-3/4 font-ysabeau"
          >
+    <Image
+      src={agentImage}
+      width={auto}
+      height={auto}
+      alt="Picture of the author"
+      className="rounded-full"
+    />
+
            <p>{agentBio}</p>
-           <p>Some contents...</p>
+           <p>Clients</p>
            <p>Some contents...</p>
          </Drawer>
 
