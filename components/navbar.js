@@ -21,7 +21,7 @@ const Navbar = () => {
   
     return (
 <header className="sticky top-0 font-ysabeau z-[555] text-[#1E1E1E]">
-<nav className="box-shadow-custom bg-white w-full">
+<nav className="box-shadow-custom bg-white/70 backdrop-blur-xl w-full">
             <div className="container p-6 mx-auto flex items-center justify-between">
                 <div className="text-lg font-bold">My Website</div>
                 <div className={`lg:flex hidden space-x-6 ${isOpen ? 'block' : 'hidden'}`}>
@@ -38,7 +38,6 @@ const Navbar = () => {
   <Drawer
            placement={placement}
            closable={true}
-           style={{width:'85%'}}
            onClose={onClose}
            open={open}
            key={placement}
