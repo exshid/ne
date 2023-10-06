@@ -12,7 +12,7 @@ const AboutUsSection = () => {
       </div>
 
       <div className="sm:w-1/2 min-h-[50vh] bg-gradient-to-r from-rose-600 to-rose-900 p-8 flex flex-col items-center justify-evenly">
-        <h2 className="text-4xl sm:text-6xl text-white">Our Agency</h2>
+        <h2 className="text-4xl sm:text-6xl font-bold text-white">Our Agency</h2>
       <p className="text-white text-xl p-5">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
       </p>

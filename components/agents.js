@@ -75,8 +75,7 @@ const namesArray = [
          >
     <Image
       src={agentImage}
-      width={200}
-      height={200}
+      fill={true}
       alt="Picture of the author"
       className="rounded-full"
     />

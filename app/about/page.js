@@ -1,0 +1,55 @@
+import Image from 'next/image'
+import { compareDesc } from 'date-fns';
+import { blogConfig } from '@/config';
+
+//const { title, description } = blogConfig.pages.home;
+//const pageTitle = "About Me — "
+
+//const ogImage = {
+ // url: `${blogConfig.url}/og`,
+//};
+
+export const metadata = {
+  pageTitle,
+  title,
+  description,
+  openGraph: {
+    type: 'website',
+    url: blogConfig.url,
+    pageTitle,
+    title,
+    description,
+    images: [ogImage],
+  },
+  twitter: {
+    pageTitle,
+    description,
+    images: ogImage,
+    card: 'summary_large_image',
+  },
+};
+
+export default function About() {
+
+  return (
+    <div className="flex h-full items-center flex-col w-full py-24 lg:pt-40">
+      <p className="font-black heading-font px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-3xl md:text-4xl lg:text-5xl text-darkish dark:text-white">About Me</p>
+      <div className="relative lg:rounded-2xl mb-10 w-full lg:w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]">
+      <Image
+  src='https://unsplash.com/photos/p_kICQCOM4s/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTV8fG9mZmljZXxlbnwwfHx8fDE2OTY1MjIzMzZ8MA&force=true&w=1920'
+  alt="picture of the author"
+  className="w-full"
+  layout="fill"
+  objectFit="contain"
+  objectPosition="center"
+  /></div>
+      <div className="w-full px-2 md:px-5 lg:px-10 xl:px-80 h-full pb-2 self-start"><p className="inline-block text-3xl md:text-4xl lg:text-5xl mr-5 text-darkish font-black dark:text-white heading-font">Hi, I am </p>
+      <h1 className="heading-font inline-block font-black text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">{blogConfig.author}</h1></div>
+<div className="px-2 md:px-5 lg:px-10 xl:px-80 w-full text-darkish items-center jakarta-font dark:text-white">
+    <p className="py-2 whitespace-pre-wrap">{blogConfig.about}</p>
+</div>
+    </div>
+
+  
+  );
+}
