@@ -47,10 +47,12 @@ const Navbar = () => {
            className="text-black w-3/4 font-ysabeau"
          >
             <div className="flex flex-col text-xl">
-                    <a onClick={onClose} href="#">Home</a>
-                    <a onClick={onClose} href="#">About</a>
-                    <a onClick={onClose} href="#our-team">Our Team</a>
-                    <a onClick={onClose} href="#contact">Submissions</a>
+              <Link onClick={onClose} href="/">Home</Link>
+
+                    <Link onClick={onClose} href="/about">About Us</Link>
+                    <Link onClick={onClose} href="/submissions">Submissions</Link>
+                    <Link onClick={onClose} href="#contact">Contact Us</Link>
+
                     </div>
          </Drawer>
 
