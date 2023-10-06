@@ -3,6 +3,7 @@ import React from 'react';
 import Agents from '../components/agents';
 import Books from '../components/books';
 import HeroSection from '../components/herosection';
+import Navbar from '../components/navbar';
 import AboutUsSection from '../components/aboutus';
 import FooterSection from '../components/footer';
 import InTheNews from '../components/news';
@@ -19,13 +20,9 @@ export default function Home() {
   return (
     <Layout className="layout">
       <Header
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-        }}
       >
-        <div className="demo-logo" />
-        <Menu
+<Navbar/>
+       <Menu
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={['2']}

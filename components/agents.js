@@ -35,7 +35,7 @@ const namesArray = [
 <>
 
 <div className="flex justify-center flex-col items-center font-ysabeau">
-    <h3 className="font-black pt-5 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
+    <h3 className="font-black p-5 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
     Meet our Agents</h3>
 
     <div className="flex flex-wrap px-24 w-full lg:w-3/4">

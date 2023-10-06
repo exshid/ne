@@ -11,7 +11,7 @@ const InTheNews = () => {
   return (
     <>
     <div className="h-[5px] bg-gradient-to-r from-rose-600 to-rose-900"></div>
-    <div className="flex flex-wrap w-full bg-[#121212] font-ysabeau">
+    <div className="flex flex-wrap flex-col w-full bg-[#121212] font-ysabeau">
       <h3 className="font-black p-6 text-2xl md:text-3xl lg:text-5xl font-black uppercase">
     In the news</h3>
 
