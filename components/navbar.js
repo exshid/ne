@@ -5,15 +5,15 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-<header className="box-shadow-custom text-[#1E1E1E]">
-<nav className="bg-white w-full">
-            <div className="container mx-auto flex items-center justify-between">
+<header className="box-shadow-custom font-ysabeau text-[#1E1E1E]">
+<nav className="bg-white w-full sticky">
+            <div className="container py-6 mx-auto flex items-center justify-between">
                 <div className="text-lg font-bold">My Website</div>
                 <div className={`lg:flex hidden space-x-6 ${isOpen ? 'block' : 'hidden'}`}>
-                    <a href="#" className="text-white">Home</a>
-                    <a href="#" className="text-white">About</a>
-                    <a href="#" className="text-white">Services</a>
-                    <a href="#" className="text-white">Contact</a>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
                 </div>
                 <div className="lg:hidden block">
                     <button

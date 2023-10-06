@@ -13,10 +13,6 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      boxShadow: {
-        'custom': '0 0 15px 0 rgba(0,0,0,0.15)',
-      },
-
       fontFamily: {
         'ysabeau': ['Ysabeau', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu',
         'Cantarell', 'Helvetica Neue', 'sans-serif'],
