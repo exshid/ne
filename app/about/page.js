@@ -7,7 +7,7 @@ import { blogConfig } from '@/config';
 //const ogImage = {
  // url: `${blogConfig.url}/og`,
 //};
-
+/*
 export const metadata = {
   pageTitle,
   title,
@@ -27,7 +27,7 @@ export const metadata = {
     card: 'summary_large_image',
   },
 };
-
+*/
 export default function About() {
 
   return (
