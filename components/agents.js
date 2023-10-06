@@ -1,16 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button, Drawer, Radio, Space } from 'antd';
 import AgentCard from './agentcard'
 import { Col, Row } from 'antd';
 const namesArray = [
-    { name: 'John', title: 'Founder' },
-    { name: 'Emily', title: 'Agent' },
-    { name: 'Michael', title: 'Editor' },
-    { name: 'Sophia', title: 'Agent' },
-    { name: 'Daniel', title: 'Editor' },
-    { name: 'Olivia', title: 'Partner' }  ];
+    { name: 'John', title: 'Founder', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" },
+    { name: 'Emily', title: 'Agent', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
+    { name: 'Michael', title: 'Editor', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
+    { name: 'Sophia', title: 'Agent', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
+    { name: 'Daniel', title: 'Editor', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
+    { name: 'Olivia', title: 'Partner', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" }  ];
   
-const Agents = () => (
-  <>
+    const Agents = () => {
+      const [agentTitle, setAgentTitle] = useState(null);
+      const [agentBio, setAgentBio] = useState(null);
+      const [agentImage, setAgentImage] = useState(null);
+      const [agentName, setAgentName] = useState(null);
+
+  const [open, setOpen] = useState(false);
+  const [placement, setPlacement] = useState('right');
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
+
+  const onChange = (e) => {
+    setPlacement(e.target.value);
+  };
+  return (
+
+<>
 
 <div className="flex justify-center flex-col items-center font-ysabeau">
     <h3 className="font-black pt-5 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
@@ -18,15 +40,37 @@ const Agents = () => (
 
     <div className="flex flex-wrap px-24 w-full lg:w-3/4">
       {namesArray.map((agent, index) => (
-        <div className="w-full sm:w-1/2 lg:w-1/3 p-2" key={index}>
+        <div className="w-full sm:w-1/2 lg:w-1/3 p-2" key={index} onClick={() => {
+          setAgentName(agent.name);
+          setAgentImage(agent.image);
+          setAgentBio(agent.bio);
+          setAgentTitle(agent.title);
+        }}
+         >
           <div className="bg-white">
-            <AgentCard name={agent.name} title={agent.title} />
+            <AgentCard name={agent.name} title={agent.title} onDrawer={showDrawer} />
           </div>
         </div>
       ))}
     </div>
   </div>
-   </>
 
+  <Drawer
+           title={agentName}
+           placement={placement}
+           closable={false}
+           onClose={onClose}
+           open={open}
+           key={placement}
+           className="text-black"
+         >
+           <p>{agentBio}</p>
+           <p>Some contents...</p>
+           <p>Some contents...</p>
+         </Drawer>
+
+   </>
 );
+};
+
 export default Agents;
