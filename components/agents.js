@@ -40,7 +40,7 @@ const namesArray = [
 
 <div id="our-team" className="flex justify-center flex-col items-center font-ysabeau pb-5">
     <h3 className="font-black p-5 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
-    Meet our Agents</h3>
+    our Agents</h3>
     <p className="text-xl pb-5 px-5 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
 
     <div className="flex flex-wrap px-24 w-full lg:w-3/4">
