@@ -5,9 +5,10 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-blue-500 p-4">
+<header className="box-shadow-custom text-[#1E1E1E]">
+<nav className="bg-white w-full">
             <div className="container mx-auto flex items-center justify-between">
-                <div className="text-white text-lg font-bold">My Website</div>
+                <div className="text-lg font-bold">My Website</div>
                 <div className={`lg:flex hidden space-x-6 ${isOpen ? 'block' : 'hidden'}`}>
                     <a href="#" className="text-white">Home</a>
                     <a href="#" className="text-white">About</a>
@@ -24,6 +25,7 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+        </header>
     );
 };
 
