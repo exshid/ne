@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from '../components/navbar';
 import FooterSection from '../components/footer';
-import {Contact} from '../components/contact';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
 
@@ -34,7 +33,6 @@ export default function RootLayout({
       
       
       
-<Contact/>
         </div>
       </Content>
       <Footer
