@@ -53,15 +53,15 @@ export default function About() {
             >
     
 <div className="flex h-full items-center flex-col w-full py-24 lg:pt-40">
-      <p className="font-black px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-3xl md:text-4xl lg:text-5xl text-darkish">Submissions</p>
+      <p className="font-black px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-3xl md:text-4xl lg:text-5xl font-ysabeau text-gray-600">Submissions</p>
       <div       style={{  background: `url('https://unsplash.com/photos/p_kICQCOM4s/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTV8fG9mZmljZXxlbnwwfHx8fDE2OTY1MjIzMzZ8MA&force=true&w=1920')`,
       backgroundSize: 'cover',
       backgroundAttachment: 'fixed'}}
  className="relative lg:rounded-2xl mb-10 w-full lg:w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]">
       </div>
-      <div className="w-full px-2 md:px-5 lg:px-10 xl:px-80 h-full pb-2 self-start"><p className="inline-block text-3xl md:text-4xl lg:text-5xl mr-5 text-darkish font-black heading-font">Hi, We are </p>
+      <div className="w-full px-2 md:px-5 lg:px-10 xl:px-80 h-full pb-2 self-start"><p className="inline-block text-3xl md:text-4xl lg:text-5xl mr-5 font-ysabeau text-gray-600 font-black heading-font">Hi, We are </p>
       <h1 className="heading-font inline-block font-black text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">{blogConfig.author}</h1></div>
-<div className="px-2 md:px-5 lg:px-10 xl:px-80 w-full text-darkish items-center jakarta-font">
+<div className="px-2 md:px-5 lg:px-10 xl:px-80 w-full font-ysabeau text-gray-600 items-center jakarta-font">
     <p className="py-2 whitespace-pre-wrap">{blogConfig.about}</p>
     <p className="text-white text-xl p-5">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.<br/>
