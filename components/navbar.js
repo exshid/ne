@@ -38,6 +38,7 @@ const Navbar = () => {
   <Drawer
            placement={placement}
            closable={true}
+           style={{width:'85%'}}
            onClose={onClose}
            open={open}
            key={placement}
@@ -46,7 +47,7 @@ const Navbar = () => {
             <div className="flex flex-col text-xl">
                     <a onClick={onClose} href="#">Home</a>
                     <a onClick={onClose} href="#">About</a>
-                    <a onClick={onClose} href="#">Services</a>
+                    <a onClick={onClose} href="#our-team">Our Team</a>
                     <a onClick={onClose} href="#contact">Submissions</a>
                     </div>
          </Drawer>
