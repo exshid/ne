@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-white text-gray-600" >
       <h1 className="text-4xl sm:text-6xl mb-4 text-gray-600">WELCOME TO</h1>
-      <h2 className="text-6xl sm:text-8xl mb-6 bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">OUR AGENCY</h2>
+      <h2 className="text-6xl sm:text-8xl mb-6 bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent font-bold">OUR AGENCY</h2>
       <div className="flex space-x-4 mb-8">
       <div className="transition hover:-translate-y-[4px] pb-2 pt-4">
                       <Link href="about">  <button 
