@@ -13,7 +13,7 @@ export const  Contact = () => {
         <div className="w-full px-2 xl:px-24 z-10">
             <h1 className="text-5xl font-bold text-left tracking-wide">Get In Touch</h1>
 
-            <p className="text-xl lg:text-3xl my-4">Email me at<br/>{footerLinks?.email && footerLinks.email}</p>
+            <p className="text-xl lg:text-3xl my-4">Email us at<br/>email@example.com</p>
         </div>
 
     </div>
