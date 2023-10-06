@@ -18,8 +18,9 @@ export default function Home() {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-    <Layout className="layout">
-   <Navbar/>
+    <Layout className="layout h-full">
+      
+<Navbar/>
       <Content>
         <div
           className="site-layout-content"

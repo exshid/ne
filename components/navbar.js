@@ -5,8 +5,8 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-<header className="box-shadow-custom font-ysabeau text-[#1E1E1E]">
-<nav className="bg-white w-full sticky">
+<header className="sticky top-0 font-ysabeau text-[#1E1E1E]">
+<nav className="box-shadow-custom bg-white w-full">
             <div className="container py-6 mx-auto flex items-center justify-between">
                 <div className="text-lg font-bold">My Website</div>
                 <div className={`lg:flex hidden space-x-6 ${isOpen ? 'block' : 'hidden'}`}>
