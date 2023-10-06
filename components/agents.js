@@ -4,18 +4,21 @@ import { Button, Drawer, Radio, Space } from 'antd';
 import { Col, Row } from 'antd';
 import AgentCard from './agentcard'
 const namesArray = [
-    { name: 'John', title: 'Founder', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" },
-    { name: 'Emily', title: 'Agent', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
-    { name: 'Michael', title: 'Editor', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
-    { name: 'Sophia', title: 'Agent', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
-    { name: 'Daniel', title: 'Editor', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
-    { name: 'Olivia', title: 'Partner', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" }  ];
+    { name: 'John', title: 'Founder',clients: 'Author A, Author S', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" },
+    { name: 'Emily', title: 'Agent',clients: 'Author Y, Author X', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
+    { name: 'Michael', title: 'Editor', clients: 'Author A, Author S', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
+    { name: 'Sophia', title: 'Agent', clients: 'Author Y, Author X', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
+    { name: 'Daniel', title: 'Editor',  clients: 'Author A, Author S', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
+    { name: 'Olivia', title: 'Partner', clients: 'Author Y, Author X', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" }  ];
   
     const Agents = () => {
       const [agentTitle, setAgentTitle] = useState(null);
       const [agentBio, setAgentBio] = useState(null);
       const [agentImage, setAgentImage] = useState(null);
       const [agentName, setAgentName] = useState(null);
+      const [agentFavorite, setAgentFavorite] = useState(null);
+      const [agentClients, setAgentClients] = useState(null);
+
 
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
@@ -47,6 +50,10 @@ const namesArray = [
           setAgentImage(agent.image);
           setAgentBio(agent.bio);
           setAgentTitle(agent.title);
+          setAgentClients(agent.clients);
+          setAgentFavorite(agent.favorite);
+
+
         }}
          >
           <div className="bg-white">
@@ -68,15 +75,19 @@ const namesArray = [
          >
     <Image
       src={agentImage}
-      width={500}
-      height={500}
+      width={300}
+      height={300}
       alt="Picture of the author"
       className="rounded-full"
     />
-
+<p className="text-bold bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">Bio</p>
            <p>{agentBio}</p>
-           <p>Clients</p>
-           <p>Some contents...</p>
+           <p className="text-bold bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">Looking for...</p>
+           <p>{agentFavorite}</p>
+
+           <p className="text-bold bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">Clients</p>
+           <p>{agentClients}</p>
+
          </Drawer>
 
    </>
