@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Button, Drawer, Radio, Space } from 'antd';
 import BookCard from './bookcard'
 import { Col, Row } from 'antd';
+import {ScrollWrapper} from '@/components/wrapper';
 
 const booksArray = [
   { title: 'Book 1', author: 'Author 1', imageUrl: 'https://ca-times.brightspotcdn.com/dims4/default/f9acfb8/2147483647/strip/true/crop/1200x1813+0+0/resize/1200x1813!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faf%2F5a%2F2f3a70a244b08aff8571dda5a3e8%2Fbooks-hunger-games-54386.jpg' },
@@ -15,7 +16,8 @@ const booksArray = [
 const Books = () => {
 
   return (
-<>
+    <ScrollWrapper>
+
 <div className="text-white font-ysabeau flex flex-col items-center font-ysabeau bg-[#121212]">
 <h3 className="font-black p-6 text-2xl md:text-3xl lg:text-5xl font-black uppercase">
     Some of our books</h3>
@@ -33,7 +35,8 @@ const Books = () => {
      </div>
   </div>
         
-</>  );
+</ScrollWrapper>
+  );
 };
 
 export default Books;

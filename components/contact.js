@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link';
+import {ScrollWrapper} from '@/components/wrapper';
 
 import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent } from 'react';
@@ -7,6 +8,7 @@ import React, {useState, useEffect, FormEvent } from 'react';
 export const  Contact = () => {
 
     return (
+        <ScrollWrapper>
 
         <section id="contact" className="min-h-screen flex flex-col font-ysabeau lg:flex-row items-stretch text-white ">
         <div className="lg:flex w-full p-8 lg:w-1/2 bg-gradient-to-r from-rose-600 to-rose-900 relative items-center">
@@ -49,6 +51,7 @@ export const  Contact = () => {
 </div>
 </div>
 </section>
+</ScrollWrapper>
 
 );
   }

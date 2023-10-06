@@ -1,8 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import {ScrollWrapper} from '@/components/wrapper';
 
 const AboutUsSection = () => {
   return (
+    <ScrollWrapper>
+
     <div className="min-h-screen flex flex-col sm:flex-row font-ysabeau">
       <div className="sm:w-1/2 min-h-[50vh] bg-gray-200 p-8 flex items-center justify-center sm:justify-end"
       style={{  background: `url('https://unsplash.com/photos/p_kICQCOM4s/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTV8fG9mZmljZXxlbnwwfHx8fDE2OTY1MjIzMzZ8MA&force=true&w=1920')`,
@@ -24,6 +27,8 @@ const AboutUsSection = () => {
 
       </div>
     </div>
+    </ScrollWrapper>
+
   );
 };
 

@@ -1,4 +1,6 @@
 import React from 'react';
+import {ScrollWrapper} from '@/components/wrapper';
+
 const newsArray = [
     { title: 'Breaking News 1', outlet: 'CNN', link: 'https://www.cnn.com/' },
     { title: 'Latest Update 1', outlet: 'BBC', link: 'https://www.bbc.com/' },
@@ -9,7 +11,7 @@ const newsArray = [
   
 const InTheNews = () => {
   return (
-    <>
+    <ScrollWrapper>
     <div className="h-[5px] bg-gradient-to-r from-rose-600 to-rose-900"></div>
       <h3 className="bg-white text-gray-600 p-6 text-2xl md:text-3xl text-center lg:text-5xl font-black uppercase">
     In the news</h3>
@@ -27,7 +29,7 @@ const InTheNews = () => {
         </div>
       ))}
     </div>
-    </>
+    </ScrollWrapper>
   );
 };
 

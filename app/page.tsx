@@ -8,6 +8,7 @@ import Navbar from '../components/navbar';
 import FooterSection from '../components/footer';
 import {Contact} from '../components/contact';
 import InTheNews from '../components/news';
+import PageWrapper from '@/components/wrapper';
 
 
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
@@ -18,6 +19,8 @@ export default function Home() {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
+    <PageWrapper>
+
     <Layout className="layout h-full">
       
 <Navbar/>
@@ -46,5 +49,7 @@ export default function Home() {
       >
 <FooterSection/>      </Footer>
     </Layout>
-  );
+    </PageWrapper>
+
+);
 };
