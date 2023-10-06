@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Drawer, Radio, Space } from 'antd';
-import AgentCard from './agentcard'
 import { Col, Row } from 'antd';
+import AgentCard from './agentcard'
 const namesArray = [
     { name: 'John', title: 'Founder', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" },
     { name: 'Emily', title: 'Agent', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
