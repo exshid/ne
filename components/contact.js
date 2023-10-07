@@ -20,20 +20,20 @@ export const  Contact = () => {
 
     </div>
 
-<div className="lg:w-1/2 w-full flex items-center justify-center text-center xl:px-16 px-0 z-0 bg-white text-[#151515]">
+<div className="lg:w-1/2 w-full flex items-center justify-center text-center xl:px-16 px-0 z-0 bg-darkish text-white">
 <div className="w-full py-6 z-20">
-<p  className="text-3xl my-5 text-[#151515] font-bold">
+<p  className="text-3xl my-5 text-white font-bold">
   CONTACT FORM
     </p>
     <form action="" className="contact-form sm:w-2/3 lg:w-full w-full px-5 lg:px-5 xl:px-0 mx-auto">
         <div className="pb-2 pt-5">
-            <input required type="email" name="email" id="email" placeholder="Email" className="bg-white block w-full p-4 border text-lg rounded-sm"/>
+            <input required type="email" name="email" id="email" placeholder="Email" className="bg-darkish block w-full p-4 border text-lg rounded-sm"/>
         </div>
         <div className="pb-2 pt-5">
-            <input required className="bg-white block w-full p-4 text-lg border rounded-sm " type="text" name="name" id="name" placeholder="Name" />
+            <input required className="bg-darkish block w-full p-4 text-lg border rounded-sm " type="text" name="name" id="name" placeholder="Name" />
         </div>
         <div className="pb-2 pt-5">
-            <textarea required className="contact-placeholder bg-white block w-full p-4 text-lg border min-h-[151px]  rounded-sm" name="message" id="message" placeholder="Your message..." />
+            <textarea required className="contact-placeholder bg-darkish block w-full p-4 text-lg border min-h-[151px]  rounded-sm" name="message" id="message" placeholder="Your message..." />
         </div>
         <div className="relative pb-2 pt-5">
             <button className=
