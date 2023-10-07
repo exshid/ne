@@ -2,15 +2,12 @@
 import InnerPage from '../../components/pages/innerpage';
 
 
-export default function About() {
+export default function Submissions() {
 
-    const {
-        token: { colorBgContainer },
-      } = theme.useToken();
       return (
         <InnerPage background='https://unsplash.com/photos/p_kICQCOM4s/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTV8fG9mZmljZXxlbnwwfHx8fDE2OTY1MjIzMzZ8MA&force=true&w=1920'
-        title='About Our Agency'
-        subtile="Hi, We are" subtileMarked="Our Agency" showAgents={true}>
+        title='Submissions'
+        subtile="Submit your book to" subtileMarked="Our Agency" showAgents={true}>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et gravida erat. Fusce fermentum ac tellus porta tincidunt. Mauris tincidunt elit vitae malesuada vehicula. Phasellus porta sit amet mi eu fringilla. Etiam quis metus risus. Sed commodo lobortis massa ut lacinia. Nullam nec est sit amet leo aliquet ultricies ut sit amet quam. Aenean porta diam non purus egestas elementum. Nam a magna imperdiet ex bibendum vehicula. Aliquam tincidunt condimentum quam at scelerisque. Vivamus congue sem ut nunc consequat, posuere malesuada nulla interdum. Donec posuere rutrum massa, in accumsan velit varius eu. In faucibus lectus ligula, vel cursus tellus ultricies tincidunt.<br/>
 
 Aenean imperdiet eros at eros facilisis cursus. Nulla dignissim rhoncus mi, vestibulum fringilla lorem convallis id. Maecenas ullamcorper a metus ut vestibulum. Quisque hendrerit accumsan justo, vel porta velit dictum nec. Ut tincidunt purus vel ex imperdiet, ac consectetur metus maximus. Proin tincidunt ex ac mollis varius. Vestibulum placerat ante at placerat semper. Pellentesque pretium, quam quis porta accumsan, mi felis vestibulum libero, et aliquam ante ante et est. Aliquam vehicula erat eget est aliquam, non aliquet dolor elementum. Curabitur vitae semper tortor. Vestibulum feugiat, dui ut hendrerit consectetur, urna dolor pulvinar tellus, vitae facilisis felis ligula non risus.<br/>

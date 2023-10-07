@@ -4,9 +4,6 @@ import InnerPage from '../../components/pages/innerpage';
 
 export default function About() {
 
-    const {
-        token: { colorBgContainer },
-      } = theme.useToken();
       return (
         <InnerPage background='https://unsplash.com/photos/p_kICQCOM4s/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTV8fG9mZmljZXxlbnwwfHx8fDE2OTY1MjIzMzZ8MA&force=true&w=1920'
         title='About Our Agency'
