@@ -40,7 +40,7 @@ const Navbar = () => {
   
     return (
 <header className="sticky top-0 font-ysabeau z-[555] text-[#1E1E1E]">
-<nav ref={headerRef} className={`${headerRef.current && scrollTop > headerRef.current.clientHeight ? 'box-shadow-custom bg-white/70 backdrop-blur-xl w-full' : 'bg-white w-full'}`}>
+<nav ref={headerRef} className={`${headerRef.current && scrollTop > headerRef.current.clientHeight ? 'box-shadow-custom bg-white/80 backdrop-blur-xl w-full' : 'bg-white w-full'}`}>
 
             <div className="container p-6 mx-auto flex items-center justify-between">
             <Link href="/">
@@ -62,9 +62,9 @@ const Navbar = () => {
            onClose={onClose}
            open={open}
            key={placement}
-           className="text-black w-full lg:w-3/4 font-ysabeau !bg-white/70 backdrop-blur-xl"
+           className="text-black w-full lg:w-3/4 font-ysabeau !bg-white/80 backdrop-blur-xl"
          >
-            <div className="flex flex-col text-xl">
+            <div className="flex flex-col text-xl lg:text-5xl">
               <Link onClick={onClose} href="/">Home</Link>
 
                     <Link onClick={onClose} href="/about">About Us</Link>

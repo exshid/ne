@@ -17,6 +17,7 @@ const Books = () => {
 
   return (
     <ScrollWrapper>
+    <div className="h-[5px] bg-gradient-to-r from-rose-600 to-rose-900"/>
 
 <div className="text-white font-ysabeau flex flex-col items-center font-ysabeau bg-[#121212]">
 <h3 className="font-black p-6 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">

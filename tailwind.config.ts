@@ -17,6 +17,10 @@ const config: Config = {
         'ysabeau': ['Ysabeau', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen-Sans', 'Ubuntu',
         'Cantarell', 'Helvetica Neue', 'sans-serif'],
       },
+      colors: {
+        'darkish': '#121212',
+      },
+
     },
   },
   plugins: [],

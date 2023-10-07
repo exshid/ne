@@ -56,7 +56,7 @@ import { blogConfig } from '@/config';
       </div>
 
   return (
-    <div className="border-t border-t-slate-300 min-h-[55px] flex h-full w-full flex-row justify-between items-center px-5 py-3">
+    <div className="bg-darkish text-white border-t border-t-slate-300 min-h-[55px] flex h-full w-full flex-row justify-between items-center px-5 py-3">
 
       <button
         className="left-8 bottom-4 h-full w-fit"
@@ -85,7 +85,7 @@ import { blogConfig } from '@/config';
           <polyline points="5 12 12 5 19 12"></polyline>
         </svg>
       </button>
-      <div className="flex h-6 flex-row items-center justify-center space-x-1 text-slate-600">
+      <div className="flex h-6 flex-row items-center justify-center space-x-1">
         <Copyright className="h-4 w-4" aria-label="Copyright" />
         <span className="text-xs xs:text-sm">{new Date().getFullYear()} · {blogConfig.author}</span>
       </div>

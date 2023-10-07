@@ -73,7 +73,7 @@ const namesArray = [
            onClose={onClose}
            open={open}
            key={placement}
-           className="text-black w-full lg:w-3/4 font-ysabeau !bg-white/70 backdrop-blur-xl"
+           className="text-black w-full lg:w-3/4 font-ysabeau !bg-white/80 backdrop-blur-xl"
          >
     <Image
       src={agentImage}
