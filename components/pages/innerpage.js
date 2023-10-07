@@ -21,9 +21,6 @@ export default function InnerPage({ background, title, subtitle, subtitleMarked,
           <Content>
             <div
               className="site-layout-content"
-              style={{
-                background: colorBgContainer,
-              }}
             >
     
 <div className="flex h-full items-center flex-col w-full py-20 lg:pt-40">
