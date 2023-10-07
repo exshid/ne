@@ -23,7 +23,7 @@ export default function InnerPage({ background, title, subtitle, subtitleMarked,
               className="site-layout-content"
             >
     
-<div className="flex h-full items-center flex-col w-full py-20 lg:pt-40">
+<div className="flex h-full items-center flex-col w-full py-20 lg:pt-36">
       <h2 className="font-black px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-3xl md:text-4xl lg:text-5xl font-ysabeau bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent h-[55px]">{title}</h2>
       <div       style={{  background: `url('${background}')`,
       backgroundSize: 'cover',
