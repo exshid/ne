@@ -32,9 +32,9 @@ export default function InnerPage({ background, title, subtitle, subtitleMarked,
       </div>
       <div
        className="w-full px-2 md:px-5 lg:px-10 xl:px-80 h-fullself-start text-center">
-        <p className="inline-block text-3xl md:text-4xl mr-5 font-ysabeau text-gray-600 font-black">{subtitle}</p>
+        <p className="inline-block text-3xl md:text-4xl mr-5 font-ysabeau text-white font-black">{subtitle}</p>
       <h1 className="heading-font inline-block font-black text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent h-[55px]">{subtitleMarked}</h1></div>
-<div className="px-2 md:px-5 lg:px-10 xl:px-80 w-full font-ysabeau text-gray-600 items-center jakarta-font">
+<div className="px-2 md:px-5 lg:px-10 xl:px-80 w-full font-ysabeau text-white items-center">
     <p className="text-white text-xl p-5">
 {children}
 

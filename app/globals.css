@@ -19,12 +19,12 @@
 }
 :where(.css-pr0fja).ant-drawer .ant-drawer-close,
 :where(.css-pr0fja).ant-drawer .ant-drawer-title{
-  color: white;
+  color: white !important;
 }
 .site-layout-content,
 body {
   color: rgb(var(--foreground-rgb));
-  background: #121212;
+  background: #121212 !important;
 }
 
 .box-shadow-custom{
