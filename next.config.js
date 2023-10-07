@@ -10,7 +10,23 @@ const nextConfig = {
           protocol: 'https',
           hostname: '**.unsplash.com',
       },
+      {
+        protocol: 'https',
+        hostname: '**.kobo.com',
+    },
+    {
+      protocol: 'https',
+      hostname: '**.brightspotcdn.com',
+  },
+  {
+    protocol: 'https',
+    hostname: '**.media-amazon.com',
+},
 
+      
+      
+      
+      
         ],
       },
     
