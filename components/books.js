@@ -19,7 +19,7 @@ const Books = () => {
     <ScrollWrapper>
 
 <div className="text-white font-ysabeau flex flex-col items-center font-ysabeau bg-[#121212]">
-<h3 className="font-black p-6 text-2xl md:text-3xl lg:text-5xl font-black uppercase">
+<h3 className="font-black p-6 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
     Some of our books</h3>
     <p className="text-xl pb-5 px-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div className="flex flex-wrap w-full">
