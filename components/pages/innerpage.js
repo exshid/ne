@@ -15,7 +15,7 @@ export default function InnerPage({ background, title, subtitle, subtitleMarked,
       return (
         <PageWrapper>
 
-        <Layout className="layout h-full">
+        <Layout className="layout h-full bg-darkish text-white">
           
     <Navbar/>
           <Content>
