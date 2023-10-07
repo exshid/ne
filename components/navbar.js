@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { Button, Drawer, Radio, Space } from 'antd';
-import { useState } from 'react';
 
 const Navbar = () => {
   const [scrollTop, setScrollTop] = useState(0);
