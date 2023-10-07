@@ -5,9 +5,8 @@ import { Button, Drawer, Radio, Space } from 'antd';
 
 const Navbar = () => {
   const [scrollTop, setScrollTop] = useState(0);
-  const headerRef = useRef<HTMLDivElement>(null);
-  const layoutSegment = useSelectedLayoutSegments();
-  
+  const headerRef = useRef(null); // No type annotation needed for vanilla JS
+
   useEffect(() => {
     // sync scroll position with state
     setScrollTop(document.documentElement.scrollTop);
@@ -20,6 +19,7 @@ const Navbar = () => {
 
     return () => document.removeEventListener('scroll', handleScroll);
   }, []);
+
 
 
   const [isOpen, setIsOpen] = useState(false);
