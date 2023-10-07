@@ -40,7 +40,7 @@ const Navbar = () => {
   
     return (
 <header className="sticky top-0 font-ysabeau z-[555] text-[#1E1E1E]">
-<nav className={`${headerRef.current && scrollTop > headerRef.current.clientHeight ? 'bg-white/70 backdrop-blur-xl w-full' : 'box-shadow-custom bg-white/70 backdrop-blur-xl w-full'}`}>
+<nav ref={headerRef} className={`${headerRef.current && scrollTop > headerRef.current.clientHeight ? 'bg-white/70 backdrop-blur-xl w-full' : 'box-shadow-custom bg-white/70 backdrop-blur-xl w-full'}`}>
 
             <div className="container p-6 mx-auto flex items-center justify-between">
             <Link href="/">
