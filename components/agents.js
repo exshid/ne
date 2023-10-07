@@ -58,7 +58,7 @@ const namesArray = [
 
         }}
          >
-          <div className="bg-white">
+          <div className="bg-darkish">
             <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={showDrawer} />
           </div>
         </div>
@@ -73,7 +73,7 @@ const namesArray = [
            onClose={onClose}
            open={open}
            key={placement}
-           className="text-black w-full lg:w-3/4 font-ysabeau !bg-white/80 backdrop-blur-xl"
+           className="text-white w-full lg:w-3/4 font-ysabeau !bg-darkish/80 backdrop-blur-xl"
          >
     <Image
       src={agentImage}

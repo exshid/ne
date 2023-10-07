@@ -6,7 +6,7 @@ const AgentCard = ({ name, title, image, onDrawer }) => (
 <div onClick={onDrawer} className="relative cursor-pointer w-full p-6 h-96 group">
 <Image
       src={image}
-      alt={`photo of ${name}`}
+      alt={`the photo of ${name}`}
       className="absolute inset-0 object-cover w-full h-full"
     />
 
