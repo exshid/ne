@@ -10,7 +10,7 @@ const BookCard = ({ title, author, imageUrl}) => (
     />
     <div className="absolute bottom-0 left-0 w-full p-6 pt-32 bg-gradient-to-t from-black to-transparent">
       <h2 className="text-white text-xl font-bold">{title}</h2>
-      <p className="text-gray-600 text-sm">{author}</p>
+      <p className="text-[gray] text-sm">{author}</p>
     </div>
   </div>
 );

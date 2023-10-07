@@ -12,7 +12,7 @@ const AgentCard = ({ name, title, image, onDrawer }) => (
 
        <div className="absolute inset-x-0 bottom-0 px-4 pb-6 group-hover:pb-8 transition pt-32 bg-gradient-to-t from-black to-transparent">
         <h3 className="text-lg font-bold text-white group-hover:-translate-y-[4px] transition">{name}</h3>
-        <p className="text-slate-600 group-hover:-translate-y-[4px] transition">{title}</p>
+        <p className="text-[gray] group-hover:-translate-y-[4px] transition">{title}</p>
       </div>
     </div>
 </>
