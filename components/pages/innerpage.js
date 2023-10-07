@@ -10,7 +10,7 @@ const { Header, Content, Footer } = Layout;
 import PageWrapper from '@/components/wrapper';
 
 
-export default function InnerPage({ background, title, subtitle, subtitleMarked,showAgents }) {
+export default function InnerPage({ background, title, subtitle, subtitleMarked,showAgents,children  }) {
 
       return (
         <PageWrapper>
