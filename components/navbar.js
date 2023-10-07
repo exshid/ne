@@ -62,7 +62,7 @@ const Navbar = () => {
            onClose={onClose}
            open={open}
            key={placement}
-           className="text-black w-3/4 font-ysabeau"
+           className="text-black w-full lg:w-3/4 font-ysabeau !bg-white/70 backdrop-blur-xl"
          >
             <div className="flex flex-col text-xl">
               <Link onClick={onClose} href="/">Home</Link>
