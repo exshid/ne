@@ -1,11 +1,29 @@
 'use client'
 import Link from 'next/link';
-
+import { useEffect, useRef, useState } from 'react';
 import { Button, Drawer, Radio, Space } from 'antd';
 import { useState } from 'react';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
+  const headerRef = useRef<HTMLDivElement>(null);
+  const layoutSegment = useSelectedLayoutSegments();
+  
+  useEffect(() => {
+    // sync scroll position with state
+    setScrollTop(document.documentElement.scrollTop);
+
+    // update state on scroll
+    const handleScroll = () => {
+      setScrollTop(document.documentElement.scrollTop);
+    };
+    document.addEventListener('scroll', handleScroll);
+
+    return () => document.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
+  const [isOpen, setIsOpen] = useState(false);
     const [open, setOpen] = useState(false);
     const [placement, setPlacement] = useState('right');
   
@@ -23,7 +41,8 @@ const Navbar = () => {
   
     return (
 <header className="sticky top-0 font-ysabeau z-[555] text-[#1E1E1E]">
-<nav className="box-shadow-custom bg-white/70 backdrop-blur-xl w-full">
+<nav className={`${headerRef.current && scrollTop > headerRef.current.clientHeight ? 'bg-white/70 backdrop-blur-xl w-full' : 'box-shadow-custom bg-white/70 backdrop-blur-xl w-full'}`}>
+
             <div className="container p-6 mx-auto flex items-center justify-between">
             <Link href="/">
               <div className="text-lg font-bold">Our agency</div>

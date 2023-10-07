@@ -80,7 +80,7 @@ const namesArray = [
       width={300}
       height={300}
       alt="Picture of the author"
-      className="rounded-full w-full h-l/2 object-cover object-top"
+      className="rounded-full w-full h-1/2 object-cover object-top"
     />
 <p className="text-bold bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">Bio</p>
            <p>{agentBio}</p>
