@@ -37,22 +37,22 @@ const namesArray = [
   const onChange = (e) => {
     setPlacement(e.target.value);
   };
-
   useEffect(() => {
-    const handleKeyboardEvent = (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        showDrawer();
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyboardEvent);
-
-    return () => {
-      window.removeEventListener('keydown', handleKeyboardEvent);
-    };
+    if (typeof window !== 'undefined') {
+      const handleKeyboardEvent = (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          showDrawer();
+        }
+      };
+  
+      window.addEventListener('keydown', handleKeyboardEvent);
+  
+      return () => {
+        window.removeEventListener('keydown', handleKeyboardEvent);
+      };
+    }
   }, []);
-
-
+  
   return (
 
     <ScrollWrapper>
