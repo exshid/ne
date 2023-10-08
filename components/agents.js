@@ -43,9 +43,9 @@ const namesArray = [
     <ScrollWrapper>
 
 <div id="our-team" className="flex justify-center flex-col items-center font-ysabeau pb-5">
-    <h3 className="font-black p-5 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
+    <h3 tabIndex="0" className="font-black p-5 text-2xl md:text-3xl lg:text-5xl font-black uppercase bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">
     our Agents</h3>
-    <p className="text-xl pb-5 px-5 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+    <p tabIndex="0" className="text-xl pb-5 px-5 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
 
     <div className="flex flex-wrap px-24 w-full lg:w-3/4 pb-5">
       {namesArray.map((agent, index) => (

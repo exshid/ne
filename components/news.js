@@ -13,7 +13,7 @@ const InTheNews = () => {
   return (
     <ScrollWrapper>
     <div className="h-[5px] bg-gradient-to-r from-rose-600 to-rose-900"/>
-      <h3 className="bg-darkish bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent p-6 text-2xl md:text-3xl text-center lg:text-5xl font-black uppercase">
+      <h3 tabIndex="0" className="bg-darkish bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent p-6 text-2xl md:text-3xl text-center lg:text-5xl font-black uppercase">
     In the news</h3>
     <div className="flex flex-wrap w-full bg-darkish text-white font-ysabeau">
 
