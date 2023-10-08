@@ -6,6 +6,7 @@ import { blogConfig } from '@/config';
 import React, {useState, useEffect, FormEvent, useRef } from 'react';
 
 export const  Contact = () => {
+    const contactSectionRef = useRef(null);
 
     return (
         <ScrollWrapper>
