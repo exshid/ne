@@ -15,9 +15,7 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
 
 export default function Home() {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
+  
   return (
 <>          <HeroSection/>
           

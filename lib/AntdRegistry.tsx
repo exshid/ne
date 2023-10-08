@@ -24,12 +24,7 @@ const StyledComponentsRegistry = ({ children }: React.PropsWithChildren) => {
   
 <Navbar/>
   <Content>
-    <div
-      className="site-layout-content"
-      style={{
-        background: colorBgContainer,
-      }}
-    >
+    <div className="site-layout-content">
 {children}
 <Contact/>
         </div>
