@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import React from 'react';
 import {Card, Button, Space } from 'antd';
-const AgentCard = ({ name, title, image, onDrawer }) => (
+const AgentCard = ({ name, title, image, onDrawer,onDrawerKeyboard }) => (
   <>
 <div onClick={onDrawer}   role="button"
   tabIndex={0}   onKeyDown={(e) => {
     if (e.key === 'Enter' || e.key === 'Space') {
-      onDrawer();
+      onDrawerKeyboard();
     }
   }} aria-label={`Open the profile of ${name}`}
 

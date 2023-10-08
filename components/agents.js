@@ -25,7 +25,7 @@ const namesArray = [
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
 
-  const onDrawer = () => {
+  const showDrawer = () => {
     setOpen(true);
   };
 
@@ -59,7 +59,7 @@ const namesArray = [
         }}
          >
           <div className="bg-darkish">
-            <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={onDrawer} />
+            <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={showDrawer} onDrawerKeyboard={showDrawer} />
           </div>
         </div>
       ))}
