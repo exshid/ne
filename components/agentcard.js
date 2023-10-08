@@ -3,7 +3,14 @@ import React from 'react';
 import {Card, Button, Space } from 'antd';
 const AgentCard = ({ name, title, image, onDrawer }) => (
   <>
-<div onClick={onDrawer} className="relative cursor-pointer w-full p-6 h-96 group">
+<div onClick={onDrawer}   role="button"
+  tabIndex={0}   onKeyDown={(e) => {
+    if (e.key === 'Enter' || e.key === 'Space') {
+      handleClick();
+    }
+  }} aria-label={`Open the profile of ${name}`}
+
+ className="relative cursor-pointer w-full p-6 h-96 group">
 <Image
       src={image}
       alt={`the photo of ${name}`}

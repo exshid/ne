@@ -40,21 +40,26 @@ const Navbar = () => {
   
     return (
 <header className="sticky top-0 font-ysabeau z-[555] text-white">
-<nav ref={headerRef} className={`${headerRef.current && scrollTop > headerRef.current.clientHeight ? 'box-shadow-custom bg-darkish/80 backdrop-blur-xl w-full' : 'bg-darkish w-full'}`}>
+<nav ref={headerRef} role="navigation" className={`${headerRef.current && scrollTop > headerRef.current.clientHeight ? 'box-shadow-custom bg-darkish/80 backdrop-blur-xl w-full' : 'bg-darkish w-full'}`}>
 
-            <div className="container p-6 mx-auto flex items-center justify-between">
-            <Link href="/">
+<div className="container p-6 mx-auto flex items-center justify-between">
+            <Link role="link" href="/">
               <div className="text-lg font-bold">Our agency</div>
               </Link>
                 <div className={`lg:flex hidden space-x-6 ${isOpen ? 'block' : 'hidden'}`}>
-                    <Link href="/about">About Us</Link>
-                    <Link href="/submissions">Submissions</Link>
-                    <Link href="#contact">Contact Us</Link>
+                <Link href="/about" role="link">About Us</Link>
+      <Link href="/submissions" role="link">Submissions</Link>
+      <Link href="#contact" role="link">Contact Us</Link>
                 </div>
                 <div className="lg:hidden block">
-                <svg onClick={showDrawer} xmlns="http://www.w3.org/2000/svg" className="cursor-pointer w-[30px] h-[30px] lg:h-[25px] lg:w-[25px]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
-                </div>
+      <button onClick={showDrawer} aria-label="Toggle Menu" role="button" className="bg-transparent border-none">
+        <svg xmlns="http://www.w3.org/2000/svg" className="cursor-pointer w-6 h-6 lg:w-5 lg:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-7 6h16"></path>
+        </svg>
+      </button>
+    </div>
             </div>
+        </nav>
             
   <Drawer
            placement={placement}
@@ -64,17 +69,30 @@ const Navbar = () => {
            key={placement}
            className="text-white w-full lg:w-3/4 font-ysabeau !bg-darkish/80 backdrop-blur-xl"
          >
-            <div className="flex flex-col text-3xl">
-              <Link onClick={onClose} href="/">Home</Link>
-
-                    <Link onClick={onClose} href="/about">About Us</Link>
-                    <Link onClick={onClose} href="/submissions">Submissions</Link>
-                    <Link onClick={onClose} href="#contact">Contact Us</Link>
-
-                    </div>
+    <ul className="flex flex-col text-3xl">
+      <li role="menuitem">
+        <Link onClick={onClose} href="/" aria-label="Home">
+          Home
+        </Link>
+      </li>
+      <li role="menuitem">
+        <Link onClick={onClose} href="/about" aria-label="About Us">
+          About Us
+        </Link>
+      </li>
+      <li role="menuitem">
+        <Link onClick={onClose} href="/submissions" aria-label="Submissions">
+          Submissions
+        </Link>
+      </li>
+      <li role="menuitem">
+        <Link onClick={onClose} href="#contact" aria-label="Contact Us">
+          Contact Us
+        </Link>
+      </li>
+    </ul>
          </Drawer>
 
-        </nav>
         </header>
     );
 };

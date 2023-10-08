@@ -20,10 +20,17 @@ const AboutUsSection = () => {
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
       </p>
       <div className="transition hover:-translate-y-[4px] pb-2 pt-4">
-                      <Link href="/about">  <button 
-     className="uppercase block transition w-full p-3 px-12 text-lg bg-white font-black rounded bg-white focus:outline-none"><p className="bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent ">Read More</p></button>
-     </Link>
-                    </div>
+  <Link href="/about">
+    <a
+      role="button"
+      className="uppercase block transition w-full p-3 px-12 text-lg bg-white font-black rounded bg-white focus:outline-none"
+      tabIndex="0"
+    >
+      <span className="sr-only">Read More</span>
+      <p className="bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent">Read More</p>
+    </a>
+  </Link>
+</div>
 
       </div>
     </div>
