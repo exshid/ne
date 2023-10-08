@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import {ScrollWrapper} from '@/components/wrapper';
 
-import React, { useState, useEffect,useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Drawer, Radio, Space } from 'antd';
 import { Col, Row } from 'antd';
 import AgentCard from './agentcard'
@@ -38,30 +38,6 @@ const namesArray = [
     setPlacement(e.target.value);
   };
 
-  const handleKeyboardEvent = (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      showDrawer();
-    }
-  };
-
-  const keyboardEventListenerRef = useRef(null);
-
-  useEffect(() => {
-    keyboardEventListenerRef.current = handleKeyboardEvent;
-
-    if (typeof window !== 'undefined') {
-      window.addEventListener('keydown', keyboardEventListenerRef.current);
-    }
-
-    return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('keydown', keyboardEventListenerRef.current);
-      }
-    };
-  }, []); // Empty dependency array ensures this effect runs once after the initial render
-
-
-
   return (
 
     <ScrollWrapper>
@@ -85,7 +61,19 @@ const namesArray = [
         }}
          >
           <div className="bg-darkish">
-            <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={showDrawer} />
+            <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={showDrawer} onDrawerKeyboard={(e) => {
+    if (e.key === 'Enter' || e.key === 'Space') {
+      setAgentName(agent.name);
+      setAgentImage(agent.image);
+      setAgentBio(agent.bio);
+      setAgentTitle(agent.title);
+      setAgentClients(agent.clients);
+      setAgentFavorite(agent.favorite);
+
+      showDrawer();
+    }
+  }}
+  />
           </div>
         </div>
       ))}
