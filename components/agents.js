@@ -37,6 +37,22 @@ const namesArray = [
   const onChange = (e) => {
     setPlacement(e.target.value);
   };
+
+  useEffect(() => {
+    const handleKeyboardEvent = (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        showDrawer();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyboardEvent);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyboardEvent);
+    };
+  }, []);
+
+
   return (
 
     <ScrollWrapper>
@@ -60,21 +76,7 @@ const namesArray = [
         }}
          >
           <div className="bg-darkish">
-            <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={showDrawer} onDrawerKeyboard={  useEffect(() => {
-    const handleKeyPress = (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        onDrawer();
-      }
-    };
-
-    // Add event listener for keyboard events when component is mounted on the client side
-    document.addEventListener('keydown', handleKeyPress);
-
-    // Clean up the event listener when the component is unmounted
-    return () => {
-      document.removeEventListener('keydown', handleKeyPress);
-    };
-  }, [onDrawer])} />
+            <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={showDrawer} />
           </div>
         </div>
       ))}
