@@ -23,11 +23,9 @@ export default function RootLayout({
         
       <StyledComponentsRegistry>
         {children}
-        </StyledComponentsRegistry>
+</StyledComponentsRegistry>
       
 
-      <Contact/>
-<FooterSection/>
       </body>
     </html>
   )

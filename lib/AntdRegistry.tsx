@@ -2,6 +2,10 @@
 
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
+import Navbar from '@/components/navbar';
+import FooterSection from '@/components/footer';
+import {Contact} from '@/components/contact';
+import PageWrapper from '@/components/wrapper';
 
 import React from 'react';
 import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
@@ -13,9 +17,32 @@ const StyledComponentsRegistry = ({ children }: React.PropsWithChildren) => {
   useServerInsertedHTML(() => (
     <style id="antd" dangerouslySetInnerHTML={{ __html: extractStyle(cache, true) }} />
   ));
-  return <StyleProvider cache={cache}>    <Layout className="layout h-full">
-  {children}
-  </Layout>
+  return <StyleProvider cache={cache}>
+    <PageWrapper>
+
+<Layout className="layout h-full">
+  
+<Navbar/>
+  <Content>
+    <div
+      className="site-layout-content"
+      style={{
+        background: colorBgContainer,
+      }}
+    >
+{children}
+<Contact/>
+        </div>
+      </Content>
+      <Footer
+      className='p-0'
+        style={{
+          textAlign: 'center',
+        }}
+      >
+<FooterSection/>      </Footer>
+    </Layout>
+    </PageWrapper>
 
   </StyleProvider>;
 };
