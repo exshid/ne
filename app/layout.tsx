@@ -1,8 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import Navbar from '../components/navbar';
+import FooterSection from '../components/footer';
+import {Contact} from '../components/contact';
+import PageWrapper from '@/components/wrapper';
 
-const inter = Inter({ subsets: ['latin'] })
+
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='transition font-ysabeau'>{children}</body>
+      <body className='transition font-ysabeau'>{children}
+
+      <Contact/>
+
+      </body>
     </html>
   )
 }
