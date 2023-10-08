@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import {ScrollWrapper} from '@/components/wrapper';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 import { Button, Drawer, Radio, Space } from 'antd';
 import { Col, Row } from 'antd';
 import AgentCard from './agentcard'
@@ -37,22 +37,31 @@ const namesArray = [
   const onChange = (e) => {
     setPlacement(e.target.value);
   };
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const handleKeyboardEvent = (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          showDrawer();
-        }
-      };
-  
-      window.addEventListener('keydown', handleKeyboardEvent);
-  
-      return () => {
-        window.removeEventListener('keydown', handleKeyboardEvent);
-      };
+
+  const handleKeyboardEvent = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      showDrawer();
     }
-  }, []);
-  
+  };
+
+  const keyboardEventListenerRef = useRef(null);
+
+  useEffect(() => {
+    keyboardEventListenerRef.current = handleKeyboardEvent;
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('keydown', keyboardEventListenerRef.current);
+    }
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('keydown', keyboardEventListenerRef.current);
+      }
+    };
+  }, []); // Empty dependency array ensures this effect runs once after the initial render
+
+
+
   return (
 
     <ScrollWrapper>
