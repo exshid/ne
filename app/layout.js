@@ -2,6 +2,7 @@ import './globals.css'
 import Navbar from '../components/navbar';
 import FooterSection from '../components/footer';
 import {Contact} from '../components/contact';
+import StyledComponentsRegistry from '../lib/AntdRegistry';
 import PageWrapper from '@/components/wrapper';
 
 
@@ -18,21 +19,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='transition font-ysabeau'>{children}
-
-      <Layout className="layout h-full">
+      <body className='transition font-ysabeau'>
+        
+      <StyledComponentsRegistry>
+        {children}
+        </StyledComponentsRegistry>
       
 
       <Contact/>
-      <Footer
-      className='p-0'
-        style={{
-          textAlign: 'center',
-        }}
-      >
-<FooterSection/>      </Footer>
-    </Layout>
-
+<FooterSection/>
       </body>
     </html>
   )
