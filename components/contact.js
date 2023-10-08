@@ -29,7 +29,7 @@ export const  Contact = () => {
     <form action="" aria-label="Contact Form"
     className="contact-form sm:w-2/3 lg:w-full w-full px-5 lg:px-5 xl:px-0 mx-auto">
         <div className="pb-2 pt-5">
-        <label htmlFor="email">Email:</label>
+        <label className="sr-only" htmlFor="email">Email:</label>
 
             <input required
             type="email" name="email" id="email" placeholder="Email" aria-required="true" aria-labelledby="email"
@@ -38,14 +38,14 @@ export const  Contact = () => {
             
         </div>
         <div className="pb-2 pt-5">
-        <label htmlFor="name">Name:</label>
+        <label className="sr-only" htmlFor="name">Name:</label>
             <input required
                             aria-required="true"
                             aria-labelledby="name"         
             className="bg-darkish block w-full p-4 text-lg border rounded-sm " type="text" name="name" id="name" placeholder="Name" />
         </div>
         <div className="pb-2 pt-5">
-        <label htmlFor="message">Message:</label>
+        <label className="sr-only" htmlFor="message">Message:</label>
             <textarea required
                             aria-required="true"
                             aria-labelledby="message"          
