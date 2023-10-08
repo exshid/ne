@@ -6,7 +6,7 @@ const AgentCard = ({ name, title, image, onDrawer }) => (
 <div onClick={onDrawer}   role="button"
   tabIndex={0}   onKeyDown={(e) => {
     if (e.key === 'Enter' || e.key === 'Space') {
-      handleClick();
+      onDrawer();
     }
   }} aria-label={`Open the profile of ${name}`}
 
