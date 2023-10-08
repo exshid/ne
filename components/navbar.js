@@ -64,7 +64,7 @@ const Navbar = () => {
 
 <div className="container p-6 mx-auto flex items-center justify-between">
             <Link role="link" href="/">
-              <div className="text-lg font-bold">Our agency</div>
+              <h1 className="text-lg font-bold">Our agency</h1>
               </Link>
                 <div className={`lg:flex hidden space-x-6 ${isOpen ? 'block' : 'hidden'}`}>
                 <Link href="/about" role="link">About Us</Link>

@@ -15,7 +15,7 @@ const HeroSection = () => {
   <Link href="/about">
     <a
       role="button"
-      className="uppercase block transition w-full p-3 md:px-16 text-lg text-white rounded bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none"
+      className="uppercase hover:!text-white block transition w-full p-3 md:px-16 text-lg text-white rounded bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none"
       tabIndex="0"
     >
       About Us
@@ -27,7 +27,7 @@ const HeroSection = () => {
   <Link href="#our-team">
     <a
       role="button"
-      className="uppercase block transition w-full p-3 md:px-16 text-lg text-white rounded bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none"
+      className="uppercase block hover:!text-white transition w-full p-3 md:px-16 text-lg text-white rounded bg-gradient-to-r from-rose-600 to-rose-900 focus:outline-none"
       tabIndex="0"
     >
 Our Team
