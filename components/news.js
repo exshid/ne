@@ -21,11 +21,11 @@ const InTheNews = () => {
         <div key={index} className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
           <div className="hover:shadow p-6 h-full flex flex-col justify-evenly">
             <p aria-hidden="true" className="text-base text-white mb-2">{news.outlet}</p>
-            <p className="sr-only">
+            <p className="sr-only" tabIndex="0">
           A news article that appeared in {news.outlet}
         </p>
 
-            <h2 className="text-xl sm:text-4xl font-black mb-4 text-white">{news.title}</h2>
+            <h2 tabIndex="0" className="text-xl sm:text-4xl font-black mb-4 text-white">{news.title}</h2>
             <a href={news.link} target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
               Read More
             </a>
