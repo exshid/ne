@@ -4,11 +4,7 @@ import {Card, Button, Space } from 'antd';
 const AgentCard = ({ name, title, image, onDrawer,onDrawerKeyboard }) => (
   <>
 <div onClick={onDrawer}   role="button"
-  tabIndex={0}   onKeyDown={(e) => {
-    if (e.key === 'Enter' || e.key === 'Space') {
-      onDrawerKeyboard();
-    }
-  }} aria-label={`Open the profile of ${name}`}
+  tabIndex={0}   onKeyDown={onDrawerKeyboard} aria-label={`Open the profile of ${name}`}
 
  className="relative cursor-pointer w-full p-6 h-96 group">
 <Image

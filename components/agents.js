@@ -59,7 +59,11 @@ const namesArray = [
         }}
          >
           <div className="bg-darkish">
-            <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={showDrawer} onDrawerKeyboard={showDrawer} />
+            <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={showDrawer} onDrawerKeyboard={(e) => {
+    if (e.key === 'Enter' || e.key === 'Space') {
+      showDrawer();
+    }
+  }} />
           </div>
         </div>
       ))}
