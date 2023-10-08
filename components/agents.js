@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import {ScrollWrapper} from '@/components/wrapper';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Drawer, Radio, Space } from 'antd';
 import { Col, Row } from 'antd';
 import AgentCard from './agentcard'
