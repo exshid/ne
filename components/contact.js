@@ -3,14 +3,14 @@ import Link from 'next/link';
 import {ScrollWrapper} from '@/components/wrapper';
 
 import { blogConfig } from '@/config';
-import React, {useState, useEffect, FormEvent } from 'react';
+import React, {useState, useEffect, FormEvent, useRef } from 'react';
 
 export const  Contact = () => {
 
     return (
         <ScrollWrapper>
 
-        <section id="contact" className="min-h-screen flex flex-col font-ysabeau lg:flex-row items-stretch text-white ">
+        <section id="contact" ref={contactSectionRef} tabIndex="-1" className="min-h-screen flex flex-col font-ysabeau lg:flex-row items-stretch text-white ">
         <div className="lg:flex w-full p-8 lg:w-1/2 bg-gradient-to-r from-rose-600 to-rose-900 relative items-center">
         <div className="w-full px-2 xl:px-24 z-10">
             <h1 className="text-5xl font-bold text-left tracking-wide">Get In Touch</h1>

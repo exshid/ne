@@ -6,6 +6,26 @@ import { Button, Drawer, Radio, Space } from 'antd';
 const Navbar = () => {
   const [scrollTop, setScrollTop] = useState(0);
   const headerRef = useRef(null); // No type annotation needed for vanilla JS
+  const contactSectionRef = useRef(null);
+
+  useEffect(() => {
+    const handleTab = (event) => {
+      if (event.key === 'Tab' && contactSectionRef.current) {
+        // If the tab key is pressed, focus the first element inside the contact section
+        contactSectionRef.current.focus();
+        event.preventDefault();
+      }
+    };
+
+    // Add event listener for the 'Tab' key
+    document.addEventListener('keydown', handleTab);
+
+    // Clean up event listener on component unmount
+    return () => {
+      document.removeEventListener('keydown', handleTab);
+    };
+  }, []);
+
 
   useEffect(() => {
     // sync scroll position with state
