@@ -13,16 +13,7 @@ import PageWrapper from '@/components/wrapper';
 export default function InnerPage({ background, title, subtitle, subtitleMarked,showAgents,children  }) {
 
       return (
-        <PageWrapper>
-
-        <Layout className="layout h-full bg-darkish text-white">
-          
-    <Navbar/>
-          <Content>
-            <div
-              className="site-layout-content"
-            >
-    
+<>    
 <div className="flex h-full items-center flex-col w-full py-20">
       <h2
       className="font-black px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-3xl md:text-4xl lg:text-5xl font-ysabeau bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent h-[55px]" tabIndex="0">{title}</h2>
@@ -49,19 +40,7 @@ export default function InnerPage({ background, title, subtitle, subtitleMarked,
 
     {showAgents && <Agents/>}
 
-    <Contact/>
-        </div>
-      </Content>
-      <Footer
-      className='p-0'
-        style={{
-          textAlign: 'center',
-        }}
-      >
-<FooterSection/>      </Footer>
-    </Layout>
-    </PageWrapper>
-
+    </>
 
   );
 }

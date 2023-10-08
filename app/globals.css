@@ -17,6 +17,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+:where(.css-pr0fja) a,
 :where(.css-pr0fja).ant-drawer .ant-drawer-close,
 :where(.css-pr0fja).ant-drawer .ant-drawer-title{
   color: white !important;
@@ -33,4 +34,10 @@ body {
 
 :where(.css-pr0fja) a:hover{
 color: #E11D48;
+}
+
+
+:where(.css-pr0fja).ant-layout-footer{
+padding: 0px !important; 
+
 }
