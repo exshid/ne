@@ -60,11 +60,21 @@ const namesArray = [
         }}
          >
           <div className="bg-darkish">
-            <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={showDrawer} onDrawerKeyboard={(e) => {
-    if (e.key === 'Enter' || e.key === 'Space') {
-      showDrawer();
-    }
-  }} />
+            <AgentCard name={agent.name} image={agent.image} title={agent.title} onDrawer={showDrawer} onDrawerKeyboard={  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        onDrawer();
+      }
+    };
+
+    // Add event listener for keyboard events when component is mounted on the client side
+    document.addEventListener('keydown', handleKeyPress);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      document.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [onDrawer])} />
           </div>
         </div>
       ))}
