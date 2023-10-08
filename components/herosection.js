@@ -4,13 +4,13 @@ import Link from 'next/link';
 const HeroSection = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-darkish text-white font-ysabeau" >
-<div tabIndex="0">
+<div className="text-center" tabIndex="0">
       <p
       className="text-4xl sm:text-6xl mb-4 text-white">WELCOME TO</p>
       <h2
       className="text-6xl sm:text-8xl mb-6 bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent font-black">OUR AGENCY</h2>
   </div>
-      <div className="flex space-x-4 mb-8 w-full md:w-auto">
+      <div className="flex space-x-4 mb-8 w-full md:w-auto text-center">
       <div className="transition hover:-translate-y-[4px] pb-2 pt-4 w-1/2 md:w-auto px-5">
   <Link href="/about">
     <a
