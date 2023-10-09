@@ -1,13 +1,13 @@
 const blogConfig = {
     url: 'https://portfoliodemo.vercel.app',
-    title: 'our agency',
+    title: 'Our agency',
     titleParts: ['agency', 'website'],
     author: 'Our agency',
     pages: {
       home: {
-        title: 'agency',
+        title: 'Literary Agency',
         description:
-          "agency.",
+          "Literary Agency template",
       },
     },
   }
