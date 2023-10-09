@@ -7,12 +7,15 @@ import { Button, Drawer, Radio, Space } from 'antd';
 import { Col, Row } from 'antd';
 import AgentCard from './agentcard'
 const namesArray = [
-    { name: 'John', title: 'Founder',clients: 'Author A, Author S', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" },
-    { name: 'Emily', title: 'Agent',clients: 'Author Y, Author X', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
-    { name: 'Michael', title: 'Editor', clients: 'Author A, Author S', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
-    { name: 'Sophia', title: 'Agent', clients: 'Author Y, Author X', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
-    { name: 'Daniel', title: 'Editor',  clients: 'Author A, Author S', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"},
-    { name: 'Olivia', title: 'Partner', clients: 'Author Y, Author X', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', image:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" }  ];
+    { name: 'John', title: 'Founder',clients: 'Author A, Author S', favorite: 'Non-fiction',
+    bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', image:"https://previews.123rf.com/images/apoev/apoev1804/apoev180400041/98691578-default-placeholder-businessman-half-length-portrait-photo-avatar-man-gray-color.jpg" },
+    { name: 'Emily', title: 'Agent',clients: 'Author Y, Author X', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' ,
+    image:"https://previews.123rf.com/images/apoev/apoev1804/apoev180400014/98748906-default-placeholder-businesswoman-half-length-portrait-photo-avatar-woman-gray-color.jpg"},
+    { name: 'Michael', title: 'Editor', clients: 'Author A, Author S', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://previews.123rf.com/images/apoev/apoev1804/apoev180400041/98691578-default-placeholder-businessman-half-length-portrait-photo-avatar-man-gray-color.jpg"},
+    { name: 'Sophia', title: 'Agent', clients: 'Author Y, Author X', favorite: 'Fantasy, Historical fiction',
+    bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://previews.123rf.com/images/apoev/apoev1804/apoev180400014/98748906-default-placeholder-businesswoman-half-length-portrait-photo-avatar-woman-gray-color.jpg"},
+    { name: 'Daniel', title: 'Editor',  clients: 'Author A, Author S', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.' , image:"https://previews.123rf.com/images/apoev/apoev1804/apoev180400041/98691578-default-placeholder-businessman-half-length-portrait-photo-avatar-man-gray-color.jpg"},
+    { name: 'Olivia', title: 'Partner', clients: 'Author Y, Author X', favorite: 'Fantasy, Historical fiction', bio: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.', image:"https://previews.123rf.com/images/apoev/apoev1804/apoev180400014/98748906-default-placeholder-businesswoman-half-length-portrait-photo-avatar-woman-gray-color.jpg" }  ];
   
     const Agents = () => {
       const [agentTitle, setAgentTitle] = useState(null);
