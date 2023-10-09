@@ -1,5 +1,4 @@
 'use client'
-
 import { blogConfig } from '@/config';
 import { motion, AnimatePresence } from "framer-motion"
 import React, { ReactNode,useState  } from 'react';
@@ -10,12 +9,10 @@ const PageWrapper  = ({ children }) => {
  return (
     <AnimatePresence>
 <motion.div
-  initial={{ opacity: 0, y:150 ,       backgroundSize: 'cover',
-  backgroundAttachment: 'fixed'}}
-  animate={{ opacity: 1, y:0,       backgroundSize: 'cover',
-  backgroundAttachment: 'fixed' }}
+  initial={{ opacity: 0, y:150 }}
+  animate={{ opacity: 1, y:0 }}
   exit={{ opacity: 0, y:150 }}
-transition={{delay:0.4}}
+transition={{delay:0.5}}
 >
     {children}
 </motion.div>
@@ -36,22 +33,7 @@ transition={{delay:0, duration: 0.4}}
 
 
 }
-  
 
-export const ImageWrapper = ({ children }) => {
-  return     <AnimatePresence>
-  <motion.div
-    initial={{ opacity: 0,  }}
-    animate={{ opacity: 1 }}
-    exit={{ opacity: 0, y:150 }}
-  transition={{delay:0.1}}
-  >
-      {children}
-  </motion.div>
-  </AnimatePresence>
-    
-  }
-    
   
 
 export default PageWrapper;
