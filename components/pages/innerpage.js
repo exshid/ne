@@ -20,10 +20,7 @@ export const metadata = {
     description,
   },
   twitter: {
-    description,
-    images: ogImage,
-    card: 'summary_large_image',
-  },
+    description},
 };
 
 

@@ -23,8 +23,7 @@ export const metadata = {
     description,
   },
   twitter: {
-    description,
-    card: 'summary_large_image',
+    description
   },
 };
 
