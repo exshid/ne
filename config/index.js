@@ -1,8 +1,8 @@
 const blogConfig = {
     url: 'https://portfoliodemo.vercel.app',
-    title: 'Our agency',
+    title: 'Literary Agency',
     titleParts: ['agency', 'website'],
-    author: 'Our agency',
+    author: 'Literary Agency',
     pages: {
       home: {
         title: 'Literary Agency',
@@ -10,17 +10,17 @@ const blogConfig = {
           "Literary Agency template",
       },
       submissions: {
-        title: 'Literary Agency - Submissions',
+        title: 'Submissions',
         description:
           "Literary Agency template",
       },
       about: {
-        title: 'Literary Agency - About Us',
+        title: 'About Us',
         description:
           "Literary Agency template",
       },
       policies: {
-        title: 'Literary Agency - Privacy Policy',
+        title: 'Privacy Policy',
         description:
           "Literary Agency template",
       },

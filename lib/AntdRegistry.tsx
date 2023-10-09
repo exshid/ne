@@ -17,8 +17,8 @@ const StyledComponentsRegistry = ({ children }: React.PropsWithChildren) => {
   useServerInsertedHTML(() => (
     <style id="antd" dangerouslySetInnerHTML={{ __html: extractStyle(cache, true) }} />
   ));
-  return <StyleProvider cache={cache}>
-    <PageWrapper>
+  return     <PageWrapper>
+  <StyleProvider cache={cache}>
 
 <Layout className="layout h-full">
   
@@ -37,9 +37,9 @@ const StyledComponentsRegistry = ({ children }: React.PropsWithChildren) => {
       >
 <FooterSection/>      </Footer>
     </Layout>
+  </StyleProvider>;
     </PageWrapper>
 
-  </StyleProvider>;
 };
 
 export default StyledComponentsRegistry;
