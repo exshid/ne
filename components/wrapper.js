@@ -8,6 +8,9 @@ import React, { ReactNode,useState  } from 'react';
 const PageWrapper  = ({ children }) => {
 
  return (
+  <div className="!bg-center"       style={{    backgroundSize: 'cover',
+  backgroundAttachment: 'fixed'}}>
+
     <AnimatePresence>
 <motion.div
   initial={{ opacity: 0, y:150 }}
@@ -18,6 +21,7 @@ transition={{delay:0.4}}
     {children}
 </motion.div>
 </AnimatePresence>
+</div>
  )
 
 }
