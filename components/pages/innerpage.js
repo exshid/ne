@@ -7,15 +7,17 @@ import FooterSection from '../../components/footer';
 import {Contact} from '../../components/contact';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
-import PageWrapper from '@/components/wrapper';
+import PageWrapper, {ImageWrapper} from '@/components/wrapper';
 
 export default function InnerPage({ background, title, subtitle, subtitleMarked,showAgents,children  }) {
 
       return (
 <>    
 <div className="flex h-full items-center flex-col w-full pt-20 pb-16">
+     <ImageWrapper>
       <h2
       className="font-black px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-3xl md:text-4xl lg:text-5xl font-ysabeau bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent h-[55px]" tabIndex="0">{title}</h2>
+      </ImageWrapper>
       <div 
       style={{  background: `url('${background}')`,
       backgroundSize: 'cover',
