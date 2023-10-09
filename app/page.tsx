@@ -24,7 +24,6 @@ export const metadata = {
   },
   twitter: {
     description,
-    images: ogImage,
     card: 'summary_large_image',
   },
 };
