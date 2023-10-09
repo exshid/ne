@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import Agents from '../components/agents';
 import Books from '../components/books';
