@@ -13,7 +13,7 @@ const { title, description } = blogConfig.pages.home;
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
 
-export const metadata: Metadata = {
+export const metadata = {
   title,
   description,
   openGraph: {
