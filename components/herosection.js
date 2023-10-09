@@ -11,7 +11,7 @@ const HeroSection = () => {
       className="text-6xl sm:text-8xl mb-6 bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent font-black">OUR AGENCY</h2>
   </div>
       <div className="flex space-x-4 mb-8 w-full md:w-auto text-center">
-      <div className="transition hover:-translate-y-[4px] pb-2 pt-4 w-1/2 md:w-auto px-5">
+      <div className="transition hover:-translate-y-[4px] pb-2 pt-4 w-1/2 md:w-auto px-5 md:px-0">
   <Link href="/about">
     <a
       role="button"
@@ -23,7 +23,7 @@ const HeroSection = () => {
   </Link>
 </div>
 
-<div className="transition hover:-translate-y-[4px] pb-2 pt-4 w-1/2 md:w-auto px-5">
+<div className="transition hover:-translate-y-[4px] pb-2 pt-4 w-1/2 md:w-auto px-5 md:px-0">
   <Link href="#our-team">
     <a
       role="button"

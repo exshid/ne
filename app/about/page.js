@@ -1,5 +1,6 @@
 import InnerPage from '../../components/pages/innerpage';
 import { blogConfig } from '@/config';
+import PageWrapper from '@/components/wrapper';
 
 
 const { title, description } = blogConfig.pages.about;
@@ -20,6 +21,7 @@ export const metadata = {
 export default function About() {
 
       return (
+        <PageWrapper>
         <InnerPage background='https://unsplash.com/photos/p_kICQCOM4s/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTV8fG9mZmljZXxlbnwwfHx8fDE2OTY1MjIzMzZ8MA&force=true&w=1920'
         title='About Our Agency'
         subtitle="Hi, We are" subtitleMarked="Our Agency" showAgents={true}>
@@ -35,7 +37,7 @@ Suspendisse elit odio, rutrum eu risus sed, vestibulum efficitur augue. Donec eg
 
 
    </InnerPage>
-
+</PageWrapper>
 
   );
 }
