@@ -6,6 +6,7 @@ import AboutUsSection from '../components/aboutus';
 import InTheNews from '../components/news';
 import Navbar from '../components/navbar';
 import { blogConfig } from '@/config';
+import PageWrapper from '@/components/wrapper';
 
 const { title, description } = blogConfig.pages.home;
 
@@ -32,13 +33,14 @@ export const metadata = {
 export default function Home() {
   
   return (
-<>          <HeroSection/>
+<PageWrapper>
+<HeroSection/>
           
           <AboutUsSection/>
           <Agents/>
 <Books/>
 
 <InTheNews/>
-</>
+</PageWrapper>
 );
 };
