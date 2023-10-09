@@ -12,7 +12,7 @@ const PageWrapper  = ({ children }) => {
   initial={{ opacity: 0, y:150 }}
   animate={{ opacity: 1, y:0 }}
   exit={{ opacity: 0, y:150 }}
-transition={{delay:0.5}}
+transition={{delay:0.3}}
 >
     {children}
 </motion.div>
@@ -26,7 +26,7 @@ return <motion.div
   initial={{ opacity: 0, y:100 }}
   whileInView={{ opacity: 1, y:0 }}
   viewport={{ once: true }}
-transition={{delay:0, duration: 0.4}}
+transition={{delay:0, duration: 0.3}}
 >
     {children}
 </motion.div>
