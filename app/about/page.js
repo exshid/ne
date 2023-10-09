@@ -1,5 +1,20 @@
-'use client'
 import InnerPage from '../../components/pages/innerpage';
+import { blogConfig } from '@/config';
+
+
+const { title, description } = blogConfig.pages.about;
+export const metadata = {
+  title,
+  description,
+  openGraph: {
+    type: 'website',
+    url: blogConfig.url,
+    title,
+    description,
+  },
+  twitter: {
+    description},
+};
 
 
 export default function About() {

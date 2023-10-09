@@ -9,21 +9,6 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
 import PageWrapper from '@/components/wrapper';
 
-const { title, description } = blogConfig.pages.home;
-export const metadata = {
-  title,
-  description,
-  openGraph: {
-    type: 'website',
-    url: blogConfig.url,
-    title,
-    description,
-  },
-  twitter: {
-    description},
-};
-
-
 export default function InnerPage({ background, title, subtitle, subtitleMarked,showAgents,children  }) {
 
       return (
