@@ -4,7 +4,7 @@ import {ScrollWrapper} from '@/components/wrapper';
 const newsArray = [
     { title: 'Breaking News 1', outlet: 'CNN', link: 'https://www.cnn.com/' },
     { title: 'Latest Update 1', outlet: 'BBC', link: 'https://www.bbc.com/' },
-    { title: 'Top Story 1', outlet: 'Fox News', link: 'https://www.foxnews.com/' },
+    { title: 'Top Story 1', outlet: 'WSJ', link: 'https://www.foxnews.com/' },
     { title: 'Featured Article 1', outlet: 'The New York Times', link: 'https://www.nytimes.com/' },
     { title: 'Exclusive Interview 1', outlet: 'Reuters', link: 'https://www.reuters.com/' },
   ];
