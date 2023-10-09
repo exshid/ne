@@ -47,7 +47,7 @@ const namesArray = [
     our Agents</h3>
     <p tabIndex="0" className="text-xl pb-5 px-5 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
 
-    <div className="flex flex-wrap px-20 sm:px-2 md:px-20 min-[880px]:px-24 w-full lg:w-3/4 pb-5">
+    <div className="flex flex-wrap px-20 sm:px-2 md:px-20 min-[880px]:px-24 lg:px-0 xl:px-24 w-full lg:w-3/4 pb-5">
       {namesArray.map((agent, index) => (
         <div className="w-full sm:w-1/2 lg:w-1/3 p-2" key={index} onClick={() => {
           setAgentName(agent.name);
