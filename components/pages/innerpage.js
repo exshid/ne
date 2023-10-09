@@ -20,8 +20,8 @@ export default function InnerPage({ background, title, subtitle, subtitleMarked,
       style={{  background: `url('${background}')`,
       backgroundSize: 'cover',
       backgroundAttachment: 'fixed'}}
- className="relative lg:rounded-2xl mb-10 w-full lg:w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]">
-      </div>
+ className="relative lg:rounded-2xl mb-10 w-full bg-center lg:w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]"/>
+      
       <div tabIndex="0"
        className="w-full px-2 md:px-5 lg:px-10 xl:px-80 h-fullself-start text-center">
         <p className="inline-block text-3xl md:text-4xl pb-2 mr-5 font-ysabeau text-white font-black">{subtitle}</p>
