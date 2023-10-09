@@ -39,11 +39,11 @@ transition={{delay:0, duration: 0.4}}
 export const ImageWrapper = ({ children }) => {
   return     <AnimatePresence>
   <motion.div
-  className="flex h-full items-center flex-col w-full pt-20 pb-16"
+  className="flex h-full items-center flex-col w-full"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0, y:150 }}
-  transition={{delay:0.6}}
+  transition={{delay:0.1}}
   >
       {children}
   </motion.div>
