@@ -13,7 +13,7 @@ const PageWrapper  = ({ children }) => {
   initial={{ opacity: 0, y:150 }}
   animate={{ opacity: 1, y:0 }}
   exit={{ opacity: 0, y:150 }}
-transition={{delay:0.5}}
+transition={{delay:0.4}}
 >
     {children}
 </motion.div>
