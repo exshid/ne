@@ -33,7 +33,7 @@ body {
 }
 
 :where(.css-pr0fja) a:hover{
-color: #E11D48;
+color: #E11D48 !important;
 }
 
 

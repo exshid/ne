@@ -6,13 +6,31 @@ import HeroSection from '../components/herosection';
 import AboutUsSection from '../components/aboutus';
 import InTheNews from '../components/news';
 import Navbar from '../components/navbar';
-import FooterSection from '../components/footer';
-import {Contact} from '../components/contact';
-import PageWrapper from '@/components/wrapper';
+import { blogConfig } from '@/config';
+
+const { title, description } = blogConfig.pages.home;
 
 
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Header, Content, Footer } = Layout;
+
+export const metadata: Metadata = {
+  title,
+  description,
+  openGraph: {
+    type: 'website',
+    url: blogConfig.url,
+    title,
+    description,
+  },
+  twitter: {
+    description,
+    images: ogImage,
+    card: 'summary_large_image',
+  },
+};
+
+
 
 export default function Home() {
   
