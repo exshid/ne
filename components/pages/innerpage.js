@@ -14,15 +14,15 @@ export default function InnerPage({ background, title, subtitle, subtitleMarked,
       return (
 <>    
 <div className="flex h-full items-center flex-col w-full pt-20 pb-16">
-     <ImageWrapper>
       <h2
       className="font-black px-2 md:px-5 lg:px-10 mb-10 xl:px-80 text-3xl md:text-4xl lg:text-5xl font-ysabeau bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent h-[55px]" tabIndex="0">{title}</h2>
-      </ImageWrapper>
+      <ImageWrapper>
       <div 
       style={{  background: `url('${background}')`,
       backgroundSize: 'cover',
       backgroundAttachment: 'fixed'}}
- className="relative lg:rounded-2xl mb-10 w-full !bg-center lg:w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]"/>
+      className="relative lg:rounded-2xl mb-10 w-full !bg-center lg:w-9/12 flex flex-col lg:flex-row justify-between my-2 bg-gradient-to-r from-rose-600 to-rose-900 h-[60vh]"/>
+      </ImageWrapper>
       
       <div tabIndex="0"
        className="w-full px-2 md:px-5 lg:px-10 xl:px-80 h-fullself-start text-center">

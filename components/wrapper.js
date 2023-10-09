@@ -40,9 +40,9 @@ export const ImageWrapper = ({ children }) => {
   return     <AnimatePresence>
   <motion.div
     initial={{ opacity: 0 }}
-    animate={{ opacity: 1, y:0 }}
+    animate={{ opacity: 1 }}
     exit={{ opacity: 0, y:150 }}
-  transition={{delay:0.4}}
+  transition={{delay:0.6}}
   >
       {children}
   </motion.div>
